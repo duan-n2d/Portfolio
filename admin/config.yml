@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: duan-n2d/Portfolio
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "content"
+    label: "Main Content"
+    files:
+      - name: "index"
+        label: "Home Page"
+        file: "index.html"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
