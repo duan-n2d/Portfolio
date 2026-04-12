@@ -779,7 +779,28 @@ h6 {
 /*------------------------------------------------------------------------------------------*/
 
 #banner {
+    background: url('../images/hero-bg.png') no-repeat center center;
     background-size: cover;
+}
+
+/* Secondary background for new sections */
+.secondary-bg {
+    background-color: var(--bg-color);
+}
+
+#roadmap .col-3 {
+    text-align: center;
+    padding: var(--space-md);
+    border-right: 1px solid var(--border-color);
+}
+
+#roadmap .col-3:last-child {
+    border-right: none;
+}
+
+#roadmap h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-xs);
 }
 
 #banner-content.row {
