@@ -50,11 +50,16 @@ const PortfolioSite = {
     },
 
     initPreloader() {
-        $(window).on('load', () => {
+        const hidePreloader = () => {
             $('#status').fadeOut();
             $('#preloader').delay(350).fadeOut('slow');
             $('body').delay(350).css({'overflow-y': 'visible'});
-        });
+        };
+
+        $(window).on('load', hidePreloader);
+
+        // Fail-safe: Hide preloader after 3 seconds no matter what
+        setTimeout(hidePreloader, 3000);
     }
 };
 

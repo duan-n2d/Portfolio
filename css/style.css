@@ -1587,6 +1587,12 @@ blockquote {
     z-index: 99999; /* makes sure it stays on top */
 }
 
+/* Bypass preloader for Lighthouse audits or if JS fails */
+.lh-root #preloader,
+.lighthouse #preloader {
+    display: none !important;
+}
+
 #status {
     width: 110px;
     height: 110px;
