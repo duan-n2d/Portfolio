@@ -1,271 +1,132 @@
 <!DOCTYPE html>
-<html>
-<head lang="vi">
+<html lang="vi">
+<head>
     <meta charset="UTF-8">
+    <title>Portfolio - NDoubleD</title>
+    <meta name="keywords" content="portfolio, n2d, duan nguyen duy, merkle, data engineer, automation">
+    <meta name="description" content="Professional portfolio of Duan Nguyen Duy (NDoubleD) - Data Engineer at Dentsu Vietnam (Merkle).">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <!--Page Title-->
-    <title>Blog - NDoubleD</title>
-
-    <!--Meta Keywords and Description-->
-    <meta name="keywords" content="portfolio, n2d, duan nguyen duy, merkle, landing page">
-    <meta name="description" content="Trang web giới thiệu bản thân, dự án và hành trình học tập của Duan Nguyen Duy (NDoubleD).">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-
-    <!--Favicon-->
     <link rel="shortcut icon" href="images/favicon.ico" title="Favicon"/>
 
-    <!-- Main CSS Files -->
+    <!-- Shared Design System -->
+    <link rel="stylesheet" href="css/design-tokens.css">
+    
+    <!-- Legacy Styles (Optimized) -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Web Color CSS -->
-    <link rel="stylesheet" href="css/web-color.css">
-
-    <!--Icon Fonts - Font Awesome Icons-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
-    <!-- Animate CSS-->
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
-
-    <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-<!-- Preloader -->
 <div id="preloader">
     <div id="status" class="la-ball-triangle-path">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div></div><div></div><div></div>
     </div>
-</div>
-<!--End of Preloader-->
-
-<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
-    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
-    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
-    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
 </div>
 
 <div id="wrapper">
-
     <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
         <div id="header" class="nav-collapse">
             <div class="row clearfix">
                 <div class="col-1">
-
-                    <!--Logo-->
                     <div id="logo">
-
-                        <!--Logo that is shown on the banner-->
-                        <img src="images/logo.png" id="banner-logo" alt="NDoubleD Portfolio Logo"/>
-                        <!--End of Banner Logo-->
-
-                        <!--The Logo that is shown on the sticky Navigation Bar-->
-                        <img src="images/logo-2.png" id="navigation-logo" alt="NDoubleD Sticky Navigation Logo"/>
-                        <!--End of Navigation Logo-->
-
+                        <img src="images/logo.png" id="banner-logo" alt="NDoubleD Logo"/>
+                        <img src="images/logo-2.png" id="navigation-logo" alt="NDoubleD Logo Sticky"/>
                     </div>
-                    <!--End of Logo-->
 
                     <aside>
-
-                        <!--Social Icons in Header-->
                         <ul class="social-icons">
-                            <li>
-                                <a target="_blank" title="Facebook" href="https://www.facebook.com/duyduannguyen.it.cfc/">
-                                    <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" title="Instagram" href="https://www.instagram.com/_n2d.duan_/">
-                                    <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/in/duannguyen2606">
-                                    <i class="fa fa-linkedin fa-1x"></i><span>Linkedin</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" title="Github" href="https://github.com/duan-n2d">
-                                    <i class="fa fa-github fa-1x"></i><span>Github</span>
-                                </a>
-                            </li>
-                            <!-- <li>
-                                <a target="_blank" title="behance" href="http://www.behance.net">
-                                    <i class="fa fa-behance fa-1x"></i><span>Behance</span>
-                                </a>
-                            </li> -->
+                            <li><a target="_blank" href="https://www.facebook.com/duyduannguyen.it.cfc/"><i class="fa fa-facebook fa-1x"></i><span>Facebook</span></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/_n2d.duan_/"><i class="fa fa-instagram fa-1x"></i><span>Instagram</span></a></li>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/duannguyen2606"><i class="fa fa-linkedin fa-1x"></i><span>Linkedin</span></a></li>
+                            <li><a target="_blank" href="https://github.com/duan-n2d"><i class="fa fa-github fa-1x"></i><span>Github</span></a></li>
                         </ul>
-                        <!--End of Social Icons in Header-->
-
                     </aside>
 
-                    <!--Main Navigation-->
                     <nav id="nav-main">
                         <ul>
-                            <li>
-                                <a href="#banner">Home</a>
-                            </li>
-                            <li>
-                                <a href="#about">Project</a>
-                            </li>
-                            <li>
-                                <a href="#gallery">Who I am?</a>
-                            </li>
-                            <li>
-                                <a href="#services">My Learning</a>
-                            </li>
-                            <li>
-                                <a href="#testimonials">My life</a>
-                            </li>
-                            <!-- <li>
-                                <a href="#clients">Clients</a>
-                            </li>
-                            <li>
-                                <a href="#pricing">Pricing</a>
-                            </li> -->
+                            <li><a href="#banner">Home</a></li>
+                            <li><a href="#about">Projects</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#services">Learning</a></li>
+                            <li><a href="#testimonials">Life</a></li>
+                            <li><a href="/admin/">Admin</a></li>
                         </ul>
                     </nav>
-                    <!--End of Main Navigation-->
 
                     <div id="nav-trigger"><span></span></div>
                     <nav id="nav-mobile"></nav>
-
                 </div>
             </div>
-        </div><!--End of Header-->
+        </div>
 
-        <!--Banner Content-->
         <div id="banner-content" class="row clearfix">
-
             <div class="col-38">
-
                 <div class="section-heading">
-                    <h1>Hello, I'm Duan Nguyen Duy</h1>
-                    <h2>I'm a Data Engineer at Dentsu Vietnam - Merkle (CXM). This is my personal portfolio.</h2>
-
+                    <h1>Duan Nguyen Duy</h1>
+                    <h2>Data Engineer @ Dentsu Vietnam - Merkle (CXM)</h2>
+                    <p>Architecting scalable data solutions and automated pipelines.</p>
                 </div>
-
-                <!--Call to Action-->
-                <!-- <a href="#" class="button">START CREATING TODAY</a> -->
-                <!--End Call to Action-->
-
+                <a href="https://duan-n2d.github.io/" class="btn-premium">View Full Academic Profile</a>
             </div>
-
-        </div><!--End of Row-->
+        </div>
     </header>
 
-    <!--Main Content Area-->
-    <section id="content" class="clearfix">
-
-        <!--About Section-->
+    <main id="content" class="clearfix">
         <section id="about" class="row clearfix">
-
             <div class="col-1">
-
                 <div class="section-heading">
-                    <h1>My Project</h1>
-                    <h2>Here are some of my projects</h2>
-                    <h2>Books that I was advised to read</h2>
-                    <ul class="list-book">
-                        <li class="list-item one">For learning data:</li>
-                            <ul class="list-book-data">
-                                <li class="list-item one">Rèn luyện tư duy phản biện (Albert Rutherford)</li>
-                                <li class="list-item two">Tư duy sâu (Diệp Tu)</li>
-                                <li class="list-item three">Etc</li>
-                            </ul>
-                        <li class="list-item two">Etc</li>
-                    </ul>
+                    <h1>Expertise & Projects</h1>
+                    <h2>Delivering high-performance data infrastructure</h2>
                 </div>
 
                 <div class="row clearfix">
-
                     <div class="col-1">
-
-                        <div class="about-item">
+                        <article class="about-item wow fadeInUp" data-wow-delay="0.1s">
                             <i class="fa fa-code fa-2x"></i>
                             <h3>Data Pipeline Automation</h3>
                             <p>Automated lead sync pipelines using Airflow and Python, reducing manual processing time by 80%.</p>
-                        </div>
+                        </article>
 
-                        <div class="about-item">
+                        <article class="about-item wow fadeInUp" data-wow-delay="0.2s">
                             <i class="fa fa-area-chart fa-2x"></i>
                             <h3>Interactive Dashboards</h3>
                             <p>Created Streamlit dashboards for real-time campaign performance tracking and gap analysis.</p>
-                        </div>
+                        </article>
 
-                        <div class="about-item">
-                            <i class="fa fa-graduation-cap fa-2x"></i>
-                            <h3>Academic Hub</h3>
-                            <p>Maintained a comprehensive academic portfolio documenting research and technical skills.</p>
-                            <a href="https://duan-n2d.github.io/" class="button">Visit Academic Site</a>
-                        </div>
-
+                        <article class="about-item wow fadeInUp" data-wow-delay="0.3s">
+                            <i class="fa fa-rocket fa-2x"></i>
+                            <h3>Automation Specialist</h3>
+                            <p>Implemented complex data transformation logic and automated reporting for multi-brand campaigns.</p>
+                        </article>
                     </div>
-
                 </div>
             </div>
         </section>
-        <!--End of About Section-->
+    </main>
 
-    </section>
-    <!--End Main Content Area-->
-
-
-    <!--Footer-->
     <footer id="landing-footer" class="clearfix">
         <div class="row clearfix">
-
-            <p id="copyright" class="col-2">Made with love by <a href="https://github.com/duan-n2d">NDoubleD</a></p>
-
-            <!--Social Icons in Footer-->
+            <p id="copyright" class="col-2">© 2026 Developed by <a href="https://github.com/duan-n2d">NDoubleD</a></p>
             <ul class="col-2 social-icons">
-                <li>
-                    <a target="_blank" title="Facebook" href="https://www.facebook.com/duyduannguyen.it.cfc/">
-                        <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" title="Instagram" href="https://www.instagram.com/_n2d.duan_/">
-                        <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" title="Linkedin" href="https://www.linkedin.com/in/duannguyen2606">
-                        <i class="fa fa-linkedin fa-1x"></i><span>Linkedin</span>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" title="Github" href="https://github.com/duan-n2d">
-                        <i class="fa fa-github fa-1x"></i><span>Github</span>
-                    </a>
-                </li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/duannguyen2606"><i class="fa fa-linkedin fa-1x"></i></a></li>
+                <li><a target="_blank" href="https://github.com/duan-n2d"><i class="fa fa-github fa-1x"></i></a></li>
             </ul>
-
-            <!--End of Social Icons in Footer-->
         </div>
     </footer>
-    <!--End of Footer-->
-
 </div>
 
-<!-- Include JavaScript resources -->
+<!-- Optimized JS Loading -->
 <script src="js/jquery.1.8.3.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script src="js/featherlight.min.js"></script>
-<script src="js/featherlight.gallery.min.js"></script>
 <script src="js/jquery.enllax.min.js"></script>
-<script src="js/jquery.scrollUp.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.stickyNavbar.min.js"></script>
 <script src="js/jquery.waypoints.min.js"></script>
-<script src="js/images-loaded.min.js"></script>
-<script src="js/lightbox.min.js"></script>
 <script src="js/site.js"></script>
-
 
 </body>
 </html>
+

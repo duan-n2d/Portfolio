@@ -1,0 +1,68 @@
+/* Shared Design Tokens - Duan Nguyen Duy (NDoubleD) */
+
+:root {
+  /* Colors - Merkle/Dentsu inspired */
+  --primary-color: #003366;    /* Deep Merkle Blue */
+  --secondary-color: #00AEEF;  /* Tech Blue */
+  --accent-color: #FF2D55;     /* Action Red/Pink */
+  --bg-color: #F9FBFF;         /* Subtle Light Blue/Grey */
+  --text-primary: #1A1A1A;
+  --text-secondary: #4A4A4A;
+  --border-color: #E0E0E0;
+  --white: #FFFFFF;
+
+  /* Typography */
+  --font-main: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Fira Code', 'Courier New', monospace;
+
+  /* Spacing */
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.15);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Styles using Tokens */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3, h4 { color: var(--primary-color); }
+a { color: var(--secondary-color); text-decoration: none; transition: var(--transition-fast); }
+a:hover { color: var(--accent-color); }
+
+.btn-premium {
+  display: inline-block;
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 4px;
+  font-weight: 600;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-medium);
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  color: var(--white);
+}

@@ -1,47 +1,35 @@
 # Personal Portfolio - Duan Nguyen Duy (NDoubleD)
 
-A professional personal landing page and portfolio showcasing my projects, learning journey, and personal interests.
+[![Static Deployment](https://github.com/duan-n2d/Portfolio/actions/workflows/static.yml/badge.svg)](https://github.com/duan-n2d/Portfolio/actions/workflows/static.yml)
 
-[**View Live Demo**](https://duan-n2d.github.io/)
+A professional personal landing page showcasing my engineering projects and automated solutions. This project is a key component of my [Professional Ecosystem](https://duan-n2d.github.io/).
 
 ## ✨ Features
-- **Responsive Design**: Optimized for different screen sizes and devices.
-- **Sticky Navigation**: Smooth browsing with a sticky header.
-- **Parallax Effects**: Engaging scrolling experience using `enllax.js`.
-- **Micro-animations**: Enhanced UI with `WOW.js` and `Animate.css`.
-- **Content Sections**:
-    - **Home**: Brief introduction.
-    - **Projects**: Highlights of technical projects and recommended reading list.
-    - **Who I am?**: Gallery and personal background.
-    - **My Learning**: Educational milestones and skill development.
-    - **My Life**: Personal testimonials and interests.
+- **Modernized codebase**: Refactored to semantic HTML5 and clean Vanilla JavaScript.
+- **Unified Design System**: Uses shared CSS design tokens for brand consistency across the ecosystem.
+- **Decap CMS**: Integrated browser-based content management at `/admin`.
+- **Responsive & Dynamic**: Optimized UX with sticky navigation and performance-tuned animations.
 
 ## 🛠️ Tech Stack
-- **Languages**: HTML5, CSS3, JavaScript.
-- **Frameworks & Libraries**:
-    - [jQuery](https://jquery.com/) (v1.8.3)
-    - [WOW.js](https://wowjs.uk/) (Animations)
-    - [Animate.css](https://animate.style/) (CSS animations)
-    - [Featherlight](https://noelboss.github.io/featherlight/) (Responsive lightbox)
-    - [Waypoints](http://imakewebthings.com/waypoints/) (Scroll triggers)
-    - [enllax.js](https://mmustafa.com/jquery-enllax.js/) (Parallax scrolling)
+- **Architecture**: Semantic HTML5 / Vanilla JS (ESM) / CSS Variables.
+- **Design System**: `design-tokens.css` (Shared).
+- **Automation**: GitHub Actions for seamless static deployment.
+- **Legacy Components** (Optimized): Waypoints, WOW.js, enllax.js.
 
 ## 📂 Project Structure
 ```text
 Portfolio/
-├── css/            # Style sheets (Main, Animations, Color scheme)
-├── fonts/          # Custom web fonts
-├── images/         # Project and gallery images
-├── js/             # JavaScript files and plugins
-│   └── site.js     # Main custom logic
-├── index.html      # Main landing page
-└── README.md       # Project documentation
+├── admin/          # Decap CMS configuration and entry point
+├── css/            # Style sheets (Design System, Animations)
+├── images/         # Project and brand assets
+├── js/             # Modernized Vanilla JS and optimized libraries
+│   └── site.js     # Refactored central logic
+├── index.html      # Professional landing page
+└── README.md       # Documentation
 ```
 
-## 🚀 Getting Started
-To view the project locally:
-1. Clone the repository.
-2. Open `index.html` in any modern web browser.
+## 🚀 Content Management
+Manage this portfolio directly from your browser by visiting `/admin`. Changes are automatically committed and deployed via GitHub Actions.
 
 ---
-Made with ❤️ by [NDoubleD](https://github.com/duan-n2d)
+Developed by [NDoubleD](https://github.com/duan-n2d)
