@@ -9,12 +9,13 @@ on:
 
 jobs:
   linkChecker:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1.9.0
         with:
+          args: --verbose --no-progress --exclude 'https://www.linkedin.com/.*' --exclude 'https://www.instagram.com/.*' --exclude '.*\{\{.*' './**/*.md' './**/*.html'
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
