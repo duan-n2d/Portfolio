@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    {% include head.html %}
+</head>
+<body>
+
+    <div id="preloader">
+        <div id="status" class="la-ball-triangle-path">
+            <div></div><div></div><div></div>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        {% include header.html %}
+        
+        <main id="content" class="clearfix">
+            {{ content }}
+        </main>
+
+        {% include footer.html %}
+    </div>
+
+    <!-- Optimized JS Loading -->
+    <script src="{{ site.baseurl }}/assets/js/jquery.1.8.3.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/wow.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/featherlight.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.enllax.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/jquery.waypoints.min.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/site.js"></script>
+
+</body>
+</html>

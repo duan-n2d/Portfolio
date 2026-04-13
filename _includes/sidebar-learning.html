@@ -1,0 +1,65 @@
+<!-- Modern Navigation Sidebar -->
+<nav class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+        <h3>📚 Learning Paths</h3>
+    </div>
+    
+    <!-- Home -->
+    <a href="/Learning-journey-of-NDoubleD/" class="sidebar-link">🏠 Home</a>
+    
+    <!-- Data Science -->
+    <div class="sidebar-header">📊 Data Science</div>
+    <a href="/Learning-journey-of-NDoubleD/Data-Science/Python/" class="sidebar-link">🐍 Python Fundamentals</a>
+    <a href="/Learning-journey-of-NDoubleD/Data-Science/Machine%20Learning/" class="sidebar-link">🤖 Machine Learning</a>
+    <a href="/Learning-journey-of-NDoubleD/Data-Science/Machine" class="sidebar-link sidebar-sublink">🧠 Deep Learning</a>
+    
+    <!-- Data Engineering -->
+    <div class="sidebar-header">🏗️ Data Engineering</div>
+    <a href="/Learning-journey-of-NDoubleD/Data-Engineer/Airflow/intro-to-airflow" class="sidebar-link">🌪️ Apache Airflow</a>
+    <a href="/Learning-journey-of-NDoubleD/Data-Engineer/Kafka/" class="sidebar-link">📨 Apache Kafka</a>
+    <a href="/Learning-journey-of-NDoubleD/Data-Engineer/Scala/" class="sidebar-link">🎯 Scala</a>
+    <a href="/Learning-journey-of-NDoubleD/Data-Engineer/Data-Structure/" class="sidebar-link">🗂️ Data Structures</a>
+    
+    <!-- Data Analytics -->
+    <div class="sidebar-header">📈 Data Analytics</div>
+    <a href="/Learning-journey-of-NDoubleD/Data-Analyst/SQL/" class="sidebar-link">📊 SQL Mastery</a>
+    <a href="/Learning-journey-of-NDoubleD/Data-Analyst/Statistic/" class="sidebar-link">📉 Statistics</a>
+    <a href="/Learning-journey-of-NDoubleD/Data-Analyst/PowerBI/" class="sidebar-link">📊 PowerBI</a>
+    
+    <!-- AI Applications -->
+    <div class="sidebar-header">🤖 AI Applications</div>
+    <a href="/Learning-journey-of-NDoubleD/AI-Applications/ai-in-data-eng" class="sidebar-link">🚀 AI in Data Engineering</a>
+    <a href="/Learning-journey-of-NDoubleD/AI-Applications/mongodb-ai-use-cases" class="sidebar-link sidebar-sublink">🗄️ MongoDB AI Use Cases</a>
+    
+    <!-- Computer Science -->
+    <div class="sidebar-header">💻 Computer Science</div>
+    <a href="/Learning-journey-of-NDoubleD/Computer-Science/Algorithms/" class="sidebar-link">🧮 Algorithms</a>
+    <a href="/Learning-journey-of-NDoubleD/Computer-Science/System-Design/" class="sidebar-link">🏛️ System Design</a>
+    
+    <!-- External Links -->
+    <div class="sidebar-header">🔗 External</div>
+    <a href="https://duan-n2d.github.io/Portfolio/" class="sidebar-link" target="_blank">💼 Portfolio</a>
+    <a href="https://github.com/duan-n2d" class="sidebar-link" target="_blank">🐙 GitHub</a>
+    <a href="https://www.linkedin.com/in/duannguyen2606" class="sidebar-link" target="_blank">💼 LinkedIn</a>
+</nav>
+
+<button class="sidebar-toggle" id="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+<script>
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('hidden');
+}
+
+// Active link detection
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('.sidebar-link');
+    const currentPath = window.location.pathname;
+    
+    links.forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+        }
+    });
+});
+</script>

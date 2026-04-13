@@ -1,0 +1,56 @@
+{% include base_path %}
+{% assign navigation = site.data.navigation[include.nav] %}
+
+<nav class="nav__list" style="background-color: blue; padding: 10px; border-radius: 5px;">
+  {% if page.sidebar.title %}
+    <header style="margin-right: 20px;">
+      <h4 class="nav__title" style="padding: 0; color: white;">{{ page.sidebar.title }}</h4>
+    </header>
+  {% endif %}
+  <ul style="list-style-type: none; padding: 0;">
+    {% for nav in navigation %}
+      <li style="margin-bottom: 10px;">
+        {% if nav.url %}
+          {% comment %}internal/external URL check{% endcomment %}
+          {% if nav.url contains "://" %}
+            {% assign domain = "" %}
+          {% else %}
+            {% assign domain = base_path %}
+          {% endif %}
+
+          <a href="{{ domain }}{{ nav.url }}" style="color: white; text-decoration: none;">
+            <span class="nav__sub-title">{{ nav.title }}</span>
+          </a>
+        {% else %}
+          <span class="nav__sub-title" style="color: white;">{{ nav.title }}</span>
+        {% endif %}
+
+        {% if nav.children != null %}
+        <ul style="list-style-type: none; padding-left: 20px;">
+          {% for child in nav.children %}
+            {% comment %}internal/external URL check{% endcomment %}
+            {% if child.url contains "://" %}
+              {% assign domain = "" %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+
+            {% comment %}set "active" class on current page{% endcomment %}
+            {% if child.url == page.url %}
+              {% assign active = "active" %}
+            {% else %}
+              {% assign active = "" %}
+            {% endif %}
+
+            <li style="margin-bottom: 5px;">
+              <a href="{{ domain }}{{ child.url }}" class="{{ active }}" style="color: white; text-decoration: none;">
+                {{ child.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

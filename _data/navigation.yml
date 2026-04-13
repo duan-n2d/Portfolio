@@ -1,0 +1,22 @@
+# main links links
+main:
+  - title: "Academic Hub"
+    url: /academic/
+
+  - title: "Learning Journey"
+    url: /learning/
+
+  - title: "Portfolio Home"
+    url: /
+
+  - title: "Publications"
+    url: /academic/publications/
+
+  - title: "Talks"
+    url: /academic/talks/
+
+  - title: "Teaching"
+    url: /academic/teaching/
+
+  - title: "Admin Panel"
+    url: /admin/
