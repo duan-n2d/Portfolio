@@ -422,9 +422,9 @@ Factors to Balance:
 
 ## 🔗 Related Topics
 
-- [LLM Fundamentals](./llm-fundamentals.md) - Introduction to LLMs
-- [NLP Fundamentals](./nlp-fundamentals.md) - Language understanding
-- [AI Agents](./ai-agents.md) - Using models as agents
+- [LLM Fundamentals](./llm-fundamentals.html) - Introduction to LLMs
+- [NLP Fundamentals](./nlp-fundamentals.html) - Language understanding
+- [AI Agents](./ai-agents.html) - Using models as agents
 - [Advanced Model Implementations](../Data-Science/Machine%20Learning/) - Practical ML
 
 ---

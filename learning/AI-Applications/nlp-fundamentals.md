@@ -294,10 +294,10 @@ Results
 
 ## 🔗 Related Topics
 
-- [LLM Fundamentals](./llm-fundamentals.md) - Modern NLP with transformers
-- [Chatbots & Conversational AI](./chatbot-conversational-ai.md) - NLP in action
-- [AI Agents](./ai-agents.md) - Using NLP for reasoning
-- [LLM Architecture](./llm-architecture-deep-dive.md) - Deep transformer understanding
+- [LLM Fundamentals](./llm-fundamentals.html) - Modern NLP with transformers
+- [Chatbots & Conversational AI](./chatbot-conversational-ai.html) - NLP in action
+- [AI Agents](./ai-agents.html) - Using NLP for reasoning
+- [LLM Architecture](./llm-architecture-deep-dive.html) - Deep transformer understanding
 
 ---
 

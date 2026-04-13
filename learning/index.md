@@ -11,7 +11,7 @@ title: "Home"
             <div class="welcome-section">
                 <p>I'm <strong>Duan Nguyen</strong>, a passionate <strong>Data Engineer</strong> at <strong>Dentsu Vietnam (Merkle CXM)</strong>. This comprehensive learning repository showcases my journey through Data Science, Data Engineering, Artificial Intelligence, and Computer Science fundamentals.</p>
                 <p>Every note, resource, and project on this site represents my commitment to continuous learning and mastery in the data & technology domain. Whether you're here to learn, reference, or collaborate—welcome aboard!</p>
-                <a href="./admin/" class="btn-premium">📝 Manage Content</a>
+                <a href="{{ site.baseurl }}/admin/" class="btn-premium">📝 Manage Content</a>
             </div>
         </div>
     </div>

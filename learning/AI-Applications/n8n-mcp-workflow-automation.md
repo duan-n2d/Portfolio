@@ -411,10 +411,10 @@ Flag if problematic
 
 ## 🔗 Related Topics
 
-- [AI Agents](./ai-agents.md) - Using agents with MCP
-- [LLM Fundamentals](./llm-fundamentals.md) - Models for MCP
-- [Chatbots & Conversational AI](./chatbot-conversational-ai.md) - Automated conversations
-- [Architecture Deep Dive](./llm-architecture-deep-dive.md) - System design
+- [AI Agents](./ai-agents.html) - Using agents with MCP
+- [LLM Fundamentals](./llm-fundamentals.html) - Models for MCP
+- [Chatbots & Conversational AI](./chatbot-conversational-ai.html) - Automated conversations
+- [Architecture Deep Dive](./llm-architecture-deep-dive.html) - System design
 
 ---
 

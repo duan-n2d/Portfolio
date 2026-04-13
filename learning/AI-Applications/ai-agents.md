@@ -261,10 +261,10 @@ agent = initialize_agent(
 
 ## 🔗 Related Topics
 
-- [LLM Fundamentals](./llm-fundamentals.md) - Foundation for language-based agents
-- [N8N & MCP](./n8n-mcp-workflow-automation.md) - Automation frameworks
-- [Chatbots & Conversational AI](./chatbot-conversational-ai.md) - Agent-driven conversations
-- [LLM Architecture](./llm-architecture-deep-dive.md) - Understanding agent reasoning
+- [LLM Fundamentals](./llm-fundamentals.html) - Foundation for language-based agents
+- [N8N & MCP](./n8n-mcp-workflow-automation.html) - Automation frameworks
+- [Chatbots & Conversational AI](./chatbot-conversational-ai.html) - Agent-driven conversations
+- [LLM Architecture](./llm-architecture-deep-dive.html) - Understanding agent reasoning
 
 ---
 

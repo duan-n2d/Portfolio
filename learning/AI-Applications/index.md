@@ -14,19 +14,19 @@ Explore cutting-edge AI technologies, from foundational concepts to production-r
 <div class="topic-grid">
 
 #### Large Language Models (LLM) Fundamentals
-**[→ Read Full Guide](./llm-fundamentals.md)**
+**[→ Read Full Guide](./llm-fundamentals.html)**
 Master the fundamentals of Large Language Models, including architecture, how they work, popular models, and real-world applications.
 
 #### NLP Fundamentals: Natural Language Processing
-**[→ Read Full Guide](./nlp-fundamentals.md)**
+**[→ Read Full Guide](./nlp-fundamentals.html)**
 The cornerstone technology enabling machines to understand and generate human language. Core tasks, techniques, and modern approaches.
 
 #### LLM Architecture Deep Dive
-**[→ Read Full Guide](./llm-architecture-deep-dive.md)**
+**[→ Read Full Guide](./llm-architecture-deep-dive.html)**
 Technical exploration of transformer architecture, attention mechanisms, modern variations, training optimization, and future architectures.
 
 #### Relative LLM Models: Comprehensive Comparison
-**[→ Read Full Guide](./relative-llm-models-comparison.md)**
+**[→ Read Full Guide](./relative-llm-models-comparison.html)**
 Detailed comparison of GPT-4, Claude, Gemini, Llama, and other models. Selection guide to choose the right model for your needs.
 
 </div>
@@ -38,15 +38,15 @@ Detailed comparison of GPT-4, Claude, Gemini, Llama, and other models. Selection
 <div class="topic-grid">
 
 #### AI Agents: Autonomous Decision-Making Systems
-**[→ Read Full Guide](./ai-agents.md)**
+**[→ Read Full Guide](./ai-agents.html)**
 Learn how AI agents think, reason, and act. Architecture, components, frameworks, and real-world applications of autonomous systems.
 
 #### Chatbots & Conversational AI
-**[→ Read Full Guide](./chatbot-conversational-ai.md)**
+**[→ Read Full Guide](./chatbot-conversational-ai.html)**
 Build intelligent conversational systems. From intent recognition to multi-turn dialogue management and deployment strategies.
 
 #### N8N & MCP: Workflow Automation & Integration
-**[→ Read Full Guide](./n8n-mcp-workflow-automation.md)**
+**[→ Read Full Guide](./n8n-mcp-workflow-automation.html)**
 Automate complex workflows and integrate AI with external systems. N8N workflows vs. MCP protocol for seamless integration.
 
 </div>
@@ -58,7 +58,7 @@ Automate complex workflows and integrate AI with external systems. N8N workflows
 <div class="topic-grid">
 
 #### MongoDB & AI: Real-World Use Cases
-**[→ Read Full Guide](./mongodb-ai-use-cases.md)**
+**[→ Read Full Guide](./mongodb-ai-use-cases.html)**
 Leverage MongoDB's flexible schema and vector search for AI applications. Enterprise patterns for personalization, fraud detection, content search, and real-time analytics.
 
 </div>
@@ -68,23 +68,23 @@ Leverage MongoDB's flexible schema and vector search for AI applications. Enterp
 ## 🎯 Learning Paths
 
 ### Path 1: AI Fundamentals to Production
-1. **Start**: [NLP Fundamentals](./nlp-fundamentals.md) - Language basics
-2. **Continue**: [LLM Fundamentals](./llm-fundamentals.md) - Model knowledge
-3. **Deepen**: [LLM Architecture Deep Dive](./llm-architecture-deep-dive.md) - Technical details
-4. **Apply**: [AI Agents](./ai-agents.md) - Build autonomous systems
-5. **Deploy**: [Chatbots](./chatbot-conversational-ai.md) - Production systems
+1. **Start**: [NLP Fundamentals](./nlp-fundamentals.html) - Language basics
+2. **Continue**: [LLM Fundamentals](./llm-fundamentals.html) - Model knowledge
+3. **Deepen**: [LLM Architecture Deep Dive](./llm-architecture-deep-dive.html) - Technical details
+4. **Apply**: [AI Agents](./ai-agents.html) - Build autonomous systems
+5. **Deploy**: [Chatbots](./chatbot-conversational-ai.html) - Production systems
 
 ### Path 2: Model Selection & Deployment
-1. **Compare**: [Relative LLM Models](./relative-llm-models-comparison.md) - Find right model
-2. **Learn**: [LLM Architecture](./llm-architecture-deep-dive.md) - Understand capabilities
-3. **Build**: [AI Agents](./ai-agents.md) or [Chatbots](./chatbot-conversational-ai.md)
-4. **Automate**: [N8N & MCP](./n8n-mcp-workflow-automation.md) - Connect to systems
+1. **Compare**: [Relative LLM Models](./relative-llm-models-comparison.html) - Find right model
+2. **Learn**: [LLM Architecture](./llm-architecture-deep-dive.html) - Understand capabilities
+3. **Build**: [AI Agents](./ai-agents.html) or [Chatbots](./chatbot-conversational-ai.html)
+4. **Automate**: [N8N & MCP](./n8n-mcp-workflow-automation.html) - Connect to systems
 
 ### Path 3: Automation & Integration
-1. **Understand**: [LLM Fundamentals](./llm-fundamentals.md) - AI capabilities
-2. **Design**: [N8N & MCP](./n8n-mcp-workflow-automation.md) - Workflow architecture
-3. **Scale**: [AI Agents](./ai-agents.md) - Complex automation
-4. **Converse**: [Chatbots](./chatbot-conversational-ai.md) - User interaction
+1. **Understand**: [LLM Fundamentals](./llm-fundamentals.html) - AI capabilities
+2. **Design**: [N8N & MCP](./n8n-mcp-workflow-automation.html) - Workflow architecture
+3. **Scale**: [AI Agents](./ai-agents.html) - Complex automation
+4. **Converse**: [Chatbots](./chatbot-conversational-ai.html) - User interaction
 
 ---
 
@@ -125,16 +125,16 @@ Leverage MongoDB's flexible schema and vector search for AI applications. Enterp
 
 | Term | Definition | Where to Learn |
 |------|-----------|-----------------|
-| **Transformer** | Neural architecture with attention mechanisms | [LLM Architecture](./llm-architecture-deep-dive.md) |
-| **Attention** | Mechanism for relating parts of sequence | [LLM Fundamentals](./llm-fundamentals.md) |
-| **Tokenization** | Breaking text into processable units | [NLP Fundamentals](./nlp-fundamentals.md) |
-| **Embedding** | Dense vector representation of text | [NLP Fundamentals](./nlp-fundamentals.md) |
-| **Intent** | User's underlying goal or request | [Chatbots](./chatbot-conversational-ai.md) |
-| **Entity** | Named meaningful element in text | [NLP Fundamentals](./nlp-fundamentals.md) |
-| **RAG** | Retrieval Augmented Generation | [AI Agents](./ai-agents.md) |
-| **Fine-tuning** | Adapting model to specific task | [Relative Models](./relative-llm-models-comparison.md) |
-| **MCP** | Model Context Protocol standard | [N8N & MCP](./n8n-mcp-workflow-automation.md) |
-| **Workflow** | Automated sequence of tasks | [N8N & MCP](./n8n-mcp-workflow-automation.md) |
+| **Transformer** | Neural architecture with attention mechanisms | [LLM Architecture](./llm-architecture-deep-dive.html) |
+| **Attention** | Mechanism for relating parts of sequence | [LLM Fundamentals](./llm-fundamentals.html) |
+| **Tokenization** | Breaking text into processable units | [NLP Fundamentals](./nlp-fundamentals.html) |
+| **Embedding** | Dense vector representation of text | [NLP Fundamentals](./nlp-fundamentals.html) |
+| **Intent** | User's underlying goal or request | [Chatbots](./chatbot-conversational-ai.html) |
+| **Entity** | Named meaningful element in text | [NLP Fundamentals](./nlp-fundamentals.html) |
+| **RAG** | Retrieval Augmented Generation | [AI Agents](./ai-agents.html) |
+| **Fine-tuning** | Adapting model to specific task | [Relative Models](./relative-llm-models-comparison.html) |
+| **MCP** | Model Context Protocol standard | [N8N & MCP](./n8n-mcp-workflow-automation.html) |
+| **Workflow** | Automated sequence of tasks | [N8N & MCP](./n8n-mcp-workflow-automation.html) |
 
 ---
 
@@ -145,59 +145,59 @@ Leverage MongoDB's flexible schema and vector search for AI applications. Enterp
 - **NLP** for sentiment analysis
 - **AI Agents** for complex issues
 - **N8N** for ticket routing
-→ [Read: Chatbots & Conversational AI](./chatbot-conversational-ai.md)
+→ [Read: Chatbots & Conversational AI](./chatbot-conversational-ai.html)
 
 ### Content Generation
 - **LLM Fundamentals** to understand models
 - **Relative Models** to pick right model
 - **Chatbots** for interactive drafting
 - **N8N** for automation pipeline
-→ [Read: Relative LLM Models](./relative-llm-models-comparison.md)
+→ [Read: Relative LLM Models](./relative-llm-models-comparison.html)
 
 ### Data Analysis
 - **NLP** for text understanding
 - **AI Agents** for multi-step analysis
 - **LLM Architecture** for fine-tuning
 - **MCP** for data tool integration
-→ [Read: AI Agents](./ai-agents.md)
+→ [Read: AI Agents](./ai-agents.html)
 
 ### Business Automation
 - **N8N** for workflow orchestration
 - **MCP** for tool standardization
 - **AI Agents** for reasoning
 - **LLM Models** as decision makers
-→ [Read: N8N & MCP](./n8n-mcp-workflow-automation.md)
+→ [Read: N8N & MCP](./n8n-mcp-workflow-automation.html)
 
 ---
 
 ## 🎓 Getting Started
 
 **For Beginners**
-1. Read [NLP Fundamentals](./nlp-fundamentals.md) - 20 minutes
-2. Read [LLM Fundamentals](./llm-fundamentals.md) - 30 minutes
-3. Choose model with [Relative Models](./relative-llm-models-comparison.md) - 20 minutes
+1. Read [NLP Fundamentals](./nlp-fundamentals.html) - 20 minutes
+2. Read [LLM Fundamentals](./llm-fundamentals.html) - 30 minutes
+3. Choose model with [Relative Models](./relative-llm-models-comparison.html) - 20 minutes
 
 **For Practitioners**
-1. Study [LLM Architecture](./llm-architecture-deep-dive.md) - 45 minutes
-2. Build with [AI Agents](./ai-agents.md) - Hands-on project
-3. Automate with [N8N & MCP](./n8n-mcp-workflow-automation.md) - Integration project
+1. Study [LLM Architecture](./llm-architecture-deep-dive.html) - 45 minutes
+2. Build with [AI Agents](./ai-agents.html) - Hands-on project
+3. Automate with [N8N & MCP](./n8n-mcp-workflow-automation.html) - Integration project
 
 **For Advanced Engineers**
-1. Deep dive [LLM Architecture](./llm-architecture-deep-dive.md)
-2. Compare implementations in [Relative Models](./relative-llm-models-comparison.md)
-3. Build multi-agent systems with [AI Agents](./ai-agents.md)
-4. Enterprise integration with [N8N & MCP](./n8n-mcp-workflow-automation.md)
+1. Deep dive [LLM Architecture](./llm-architecture-deep-dive.html)
+2. Compare implementations in [Relative Models](./relative-llm-models-comparison.html)
+3. Build multi-agent systems with [AI Agents](./ai-agents.html)
+4. Enterprise integration with [N8N & MCP](./n8n-mcp-workflow-automation.html)
 
 ---
 
 ## 🔗 Cross-References
 
 **From Data Science:**
-- Machine Learning fundamentals → [AI Agents](./ai-agents.md)
+- Machine Learning fundamentals → [AI Agents](./ai-agents.html)
 - Python programming → Implement agents/chatbots
 
 **From Data Engineering:**
-- ETL pipelines → [N8N Workflows](./n8n-mcp-workflow-automation.md)
+- ETL pipelines → [N8N Workflows](./n8n-mcp-workflow-automation.html)
 - Stream processing → Real-time AI integration
 
 **From Computer Science:**
@@ -240,7 +240,7 @@ Research
 ## ⚙️ Previous Content
 
 **AI in Data Engineering**
-**[→ Read Full Article](./ai-in-data-eng.md)**
+**[→ Read Full Article](./ai-in-data-eng.html)**
 Leveraging AI to enhance ETL pipelines, data quality, and engineering workflows.
 
 ---

@@ -5,6 +5,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Data Engineer at Dentsu Vietnam (Merkle CXM).
 baseurl: "/Portfolio" # Important: GitHub Pages project site
 url: "https://duan-n2d.github.io"
+talkmap_link: false
 
 # Collections from Academic Hub
 collections:

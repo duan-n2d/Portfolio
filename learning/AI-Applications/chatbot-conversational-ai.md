@@ -357,10 +357,10 @@ Modern LLM-based approach
 
 ## 🔗 Related Topics
 
-- [NLP Fundamentals](./nlp-fundamentals.md) - Understanding language
-- [LLM Fundamentals](./llm-fundamentals.md) - Powering modern chatbots
-- [AI Agents](./ai-agents.md) - Multi-step reasoning systems
-- [N8N & MCP](./n8n-mcp-workflow-automation.md) - Connecting to external systems
+- [NLP Fundamentals](./nlp-fundamentals.html) - Understanding language
+- [LLM Fundamentals](./llm-fundamentals.html) - Powering modern chatbots
+- [AI Agents](./ai-agents.html) - Multi-step reasoning systems
+- [N8N & MCP](./n8n-mcp-workflow-automation.html) - Connecting to external systems
 
 ---
 

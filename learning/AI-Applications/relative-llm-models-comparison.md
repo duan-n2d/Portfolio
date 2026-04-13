@@ -378,10 +378,10 @@ If need code → Claude 3 Opus or Copilot
 
 ## 🔗 Related Topics
 
-- [LLM Fundamentals](./llm-fundamentals.md) - Model capabilities
-- [LLM Architecture](./llm-architecture-deep-dive.md) - Technical details
-- [AI Agents](./ai-agents.md) - Using models as decision-makers
-- [Chatbots](./chatbot-conversational-ai.md) - Model selection for chat
+- [LLM Fundamentals](./llm-fundamentals.html) - Model capabilities
+- [LLM Architecture](./llm-architecture-deep-dive.html) - Technical details
+- [AI Agents](./ai-agents.html) - Using models as decision-makers
+- [Chatbots](./chatbot-conversational-ai.html) - Model selection for chat
 
 ---
 

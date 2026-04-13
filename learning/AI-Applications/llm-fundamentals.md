@@ -208,10 +208,10 @@ Decoded Output
 
 ## 🔗 Related Topics
 
-- [AI Agents](./ai-agents.md) - Using LLMs as decision-makers
-- [NLP Fundamentals](./nlp-fundamentals.md) - Language understanding basics
-- [Chatbots & Conversational AI](./chatbot-conversational-ai.md) - Building interactive systems
-- [LLM Architecture Deep Dive](./llm-architecture-deep-dive.md) - Technical details
+- [AI Agents](./ai-agents.html) - Using LLMs as decision-makers
+- [NLP Fundamentals](./nlp-fundamentals.html) - Language understanding basics
+- [Chatbots & Conversational AI](./chatbot-conversational-ai.html) - Building interactive systems
+- [LLM Architecture Deep Dive](./llm-architecture-deep-dive.html) - Technical details
 
 ---
 
