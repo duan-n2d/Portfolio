@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: duan-n2d/duan-n2d.github.io
-  branch: master # or main, check your repo
+  branch: master
 
 media_folder: "images"
 public_folder: "/images"
