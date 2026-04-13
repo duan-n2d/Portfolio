@@ -11,6 +11,10 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% if site.publications.size > 0 %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% else %}
+  <p>Coming soon! I am currently working on documenting my research and professional publications. Stay tuned for updates on my latest work in Data Engineering and AI.</p>
+{% endif %}

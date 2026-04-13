@@ -29,7 +29,7 @@ title: "Home"
                 <i class="fa fa-database fa-2x"></i>
                 <h3><a href="./Data-Engineer/">Data Engineering</a></h3>
                 <p>
-                    <a href="./Data-Engineer/Airflow/intro-to-airflow.md">Apache Airflow</a>,
+                    <a href="./Data-Engineer/Airflow/intro-to-airflow.html">Apache Airflow</a>,
                     <a href="./Data-Engineer/Kafka/">Apache Kafka</a>,
                     <a href="./Data-Engineer/Scala/">Scala</a>,
                     <a href="./Data-Engineer/Data-Structure/">Data Structures</a>
@@ -49,10 +49,10 @@ title: "Home"
                 <i class="fa fa-robot fa-2x"></i>
                 <h3><a href="./AI-Applications/">AI Applications</a></h3>
                 <p>
-                    <a href="./AI-Applications/llm-fundamentals.md">LLM</a>,
-                    <a href="./AI-Applications/nlp-fundamentals.md">NLP</a>,
-                    <a href="./AI-Applications/ai-agents.md">Agents</a>,
-                    <a href="./AI-Applications/ai-in-data-eng.md">AI in DE</a>
+                    <a href="./AI-Applications/llm-fundamentals.html">LLM</a>,
+                    <a href="./AI-Applications/nlp-fundamentals.html">NLP</a>,
+                    <a href="./AI-Applications/ai-agents.html">Agents</a>,
+                    <a href="./AI-Applications/ai-in-data-eng.html">AI in DE</a>
                 </p>
             </div>
         </div>

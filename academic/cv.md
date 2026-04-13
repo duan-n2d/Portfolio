@@ -11,35 +11,27 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **Bachelor in Management Information Systems**, University of Economics and Law, VNU-HCM, 2021 - 2025
+* **Google Business Intelligence Professional Certificate**, May 2024
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Sep 2025 - Present: Data Engineer**
+  * **Merkle Inc Vietnam (Dentsu)**
+  * Duties: Designing and maintaining scalable data pipelines, Salesforce Marketing Cloud integrations, and Airflow orchestration.
+  * Focus: Data architecture, workflow automation, and CDP insights.
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Oct 2024 - Sep 2025: Data Analyst**
+  * **Antsomi (CDP 365)**
+  * Duties: Optimized Customer Data Platform solutions, automated data processing with Python, and generated business insights.
+  * Focus: ETL development and system monitoring.
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Data Engineering**: Apache Airflow, ETL/ELT pipelines, Data Warehousing.
+* **Data Analysis**: SQL, Python, Statistics, Google Business Intelligence.
+* **Platforms**: Salesforce Marketing Cloud (SFMC), Customer Data Platforms (CDP), Google Cloud Platform.
+* **Soft Skills**: Management Information Systems, Technical Documentation.
 
 Publications
 ======
@@ -61,4 +53,5 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* **Academic Enthusiast**: Actively sharing knowledge in Data Engineering and AI Applications.
+* **Continuous Learner**: Dedicated to mastering modern tech stacks and sharing insights through the Learning Journey Hub.

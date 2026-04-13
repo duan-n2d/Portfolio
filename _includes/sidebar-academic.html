@@ -9,8 +9,10 @@
         <img src=
         {% if s.image contains "://" %}
           "{{ s.image }}"
-        {% else %}
+        {% elsif s.image != "" and s.image != nil %}
           "{{ s.image | prepend: "/images/" | prepend: base_path }}"
+        {% else %}
+          ""
         {% endif %}
         alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}" style="max-width: 100%; height: auto;">
       {% endif %}
