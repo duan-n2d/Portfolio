@@ -11,10 +11,10 @@
         </div>
     </div>
 
-    <div id="wrapper" class="{% if page.url contains '/learning/' and page.url != '/learning/index.html' and page.url != '/learning/' %}has-learning-sidebar{% endif %}">
+    <div id="wrapper" class="{% if page.url contains '/learning/' %}has-learning-sidebar{% endif %}">
         {% include header.html %}
         
-        {% if page.url contains '/learning/' and page.url != '/learning/index.html' and page.url != '/learning/' %}
+        {% if page.url contains '/learning/' %}
             {% include sidebar-learning.html %}
         {% endif %}
         

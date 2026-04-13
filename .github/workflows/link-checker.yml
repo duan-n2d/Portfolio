@@ -29,7 +29,8 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           # Scan only rendered HTML files in the _site directory
-          args: --verbose --no-progress --exclude-all-private './_site/**/*.html'
+          # Use --root-dir and --remap to handle the /Portfolio baseurl
+          args: --verbose --no-progress --exclude-all-private --root-dir "./_site" --remap "/Portfolio/ /" "./_site/**/*.html"
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

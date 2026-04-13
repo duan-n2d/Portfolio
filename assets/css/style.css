@@ -353,7 +353,7 @@ section {
 }
 
 #logo img {
-    max-height: 22px;
+    max-height: 28px;
     vertical-align: middle;
     margin-right: 15px;
 }
@@ -2158,7 +2158,7 @@ blockquote {
 
 /* =Media Queries for Nav
 ===============================*/
-@media all and (max-width: 1024px) {
+@media all and (max-width: 991px) {
     #nav-trigger {
         display: block;
     }
@@ -2432,10 +2432,11 @@ blockquote {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-right: 1px solid var(--sidebar-border);
-    z-index: 99;
+    z-index: 1000; /* Higher than content, but below header if needed */
     overflow-y: auto;
     transition: transform var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
     padding: 20px 0;
+    transform: translateX(0); /* Ensure visible on desktop */
 }
 
 .modern-sidebar::-webkit-scrollbar {
@@ -2621,7 +2622,7 @@ blockquote {
     font-size: 1.5rem;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
     .modern-sidebar {
         transform: translateX(-100%);
     }
@@ -2650,10 +2651,16 @@ blockquote {
 }
 
 /* Adjust main content when sidebar is fixed */
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
     .has-learning-sidebar #content {
-        margin-left: 280px;
-        width: calc(100% - 280px);
+        margin-left: 280px !important;
+        width: calc(100% - 280px) !important;
+        position: relative;
+    }
+    
+    .has-learning-sidebar .modern-sidebar {
+        transform: translateX(0) !important;
+        display: block !important;
     }
 }
 
