@@ -1,18 +1,43 @@
 backend:
   name: github
-  repo: duan-n2d/Portfolio
-  branch: main
+  repo: duan-n2d/duan-n2d.github.io
+  branch: master # or main, check your repo
 
 media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "content"
-    label: "Main Content"
-    files:
-      - name: "index"
-        label: "Home Page"
-        file: "index.html"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "single"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "portfolio"
+    label: "Portfolio Points"
+    folder: "_portfolio"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "single"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "publications"
+    label: "Publications"
+    folder: "_publications"
+    create: true
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "single"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Venue", name: "venue", widget: "string"}
+      - {label: "Paper URL", name: "paperurl", widget: "string", required: false}
+      - {label: "Citation", name: "citation", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}

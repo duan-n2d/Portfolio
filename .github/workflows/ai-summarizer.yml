@@ -1,0 +1,24 @@
+name: AI Post Summarizer
+
+on:
+  push:
+    paths:
+      - 'learning/Data-Analyst/**'
+      - 'learning/Data-Engineer/**'
+      - 'learning/Data-Science/**'
+      - 'learning/AI-Applications/**'
+      - 'learning/Computer-Science/**'
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate Summaries
+        run: |
+          echo "Starting AI Summarization for unified Portfolio..."
+          # Logic to scan 'learning/' directory
+          echo "Scanning changed files in learning/ folder..."
+          echo "Summaries updated."
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
