@@ -1,64 +1,87 @@
-<!-- Modern Navigation Sidebar -->
-<nav class="sidebar" id="sidebar">
+<!-- Modern Hierarchical Sidebar -->
+<nav class="sidebar modern-sidebar" id="sidebar">
     <div class="sidebar-brand">
-        <h3>📚 Learning Paths</h3>
+        <h3>🚀 Learning Journey</h3>
     </div>
     
-    <!-- Home -->
-    <a href="{{ site.baseurl }}/learning/" class="sidebar-link">🏠 Home</a>
-    
-    <!-- Data Science -->
-    <div class="sidebar-header">📊 Data Science</div>
-    <a href="{{ site.baseurl }}/learning/Data-Science/Python/" class="sidebar-link">🐍 Python Fundamentals</a>
-    <a href="{{ site.baseurl }}/learning/Data-Science/Machine%20Learning/" class="sidebar-link">🤖 Machine Learning</a>
-    
-    <!-- Data Engineering -->
-    <div class="sidebar-header">🏗️ Data Engineering</div>
-    <a href="{{ site.baseurl }}/learning/Data-Engineer/Airflow/intro-to-airflow" class="sidebar-link">🌪️ Apache Airflow</a>
-    <a href="{{ site.baseurl }}/learning/Data-Engineer/Kafka/" class="sidebar-link">📨 Apache Kafka</a>
-    <a href="{{ site.baseurl }}/learning/Data-Engineer/Scala/" class="sidebar-link">🎯 Scala</a>
-    <a href="{{ site.baseurl }}/learning/Data-Engineer/Data-Structure/" class="sidebar-link">🗂️ Data Structures</a>
-    
-    <!-- Data Analytics -->
-    <div class="sidebar-header">📈 Data Analytics</div>
-    <a href="{{ site.baseurl }}/learning/Data-Analyst/SQL/" class="sidebar-link">📊 SQL Mastery</a>
-    <a href="{{ site.baseurl }}/learning/Data-Analyst/Statistic/" class="sidebar-link">📉 Statistics</a>
-    <a href="{{ site.baseurl }}/learning/Data-Analyst/PowerBI/" class="sidebar-link">📊 PowerBI</a>
-    
-    <!-- AI Applications -->
-    <div class="sidebar-header">🤖 AI Applications</div>
-    <a href="{{ site.baseurl }}/learning/AI-Applications/ai-in-data-eng" class="sidebar-link">🚀 AI in Data Engineering</a>
-    <a href="{{ site.baseurl }}/learning/AI-Applications/mongodb-ai-use-cases" class="sidebar-link sidebar-sublink">🗄️ MongoDB AI Use Cases</a>
-    
-    <!-- Computer Science -->
-    <div class="sidebar-header">💻 Computer Science</div>
-    <a href="{{ site.baseurl }}/learning/Computer-Science/Algorithms/" class="sidebar-link">🧮 Algorithms</a>
-    <a href="{{ site.baseurl }}/learning/Computer-Science/System-Design/" class="sidebar-link">🏛️ System Design</a>
-    
-    <!-- External Links -->
-    <div class="sidebar-header">🔗 External</div>
-    <a href="https://duan-n2d.github.io/Portfolio/" class="sidebar-link" target="_blank">💼 Portfolio</a>
-    <a href="https://github.com/duan-n2d" class="sidebar-link" target="_blank">🐙 GitHub</a>
-    <a href="https://www.linkedin.com/in/duannguyen2606" class="sidebar-link" target="_blank">💼 LinkedIn</a>
+    <div class="sidebar-content">
+        <!-- Dashboard Home -->
+        <a href="{{ site.baseurl }}/learning/" class="sidebar-link main-home">
+            <i class="fa fa-home"></i> <span>Hub Overview</span>
+        </a>
+
+        {% for pillar in site.data.learning_nav.pillars %}
+        <div class="sidebar-pillar">
+            <div class="pillar-title">{{ pillar.title }}</div>
+            
+            <div class="pillar-categories">
+                {% for cat in pillar.categories %}
+                <div class="category-group {% if page.url contains cat.url %}active-group{% endif %}" id="group-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+                    <div class="category-header" onclick="toggleCategory('group-{{ forloop.parentloop.index }}-{{ forloop.index }}')">
+                        <div class="header-left">
+                            <i class="fa {{ cat.icon }}"></i>
+                            <span>{{ cat.title }}</span>
+                        </div>
+                        <i class="fa fa-chevron-right chevron"></i>
+                    </div>
+                    
+                    <div class="category-items">
+                        <a href="{{ site.baseurl }}{{ cat.url }}" class="sidebar-sublink overview {% if page.url == cat.url or page.url == cat.url | append: 'index.html' %}active{% endif %}">
+                            <i class="fa fa-info-circle"></i> Section Overview
+                        </a>
+                        {% for item in cat.items %}
+                        <a href="{{ site.baseurl }}{{ item.url }}" class="sidebar-sublink {% if page.url contains item.url %}active{% endif %}">
+                            {{ item.title }}
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+
+        <!-- Quick Links -->
+        <div class="sidebar-pillar">
+            <div class="pillar-title">🔗 Quick Links</div>
+            <div class="pillar-categories">
+                {% for link in site.data.learning_nav.external_links %}
+                <a href="{{ link.url }}" class="sidebar-link external" target="_blank">
+                    <i class="fa {{ link.icon }}"></i> <span>{{ link.title }}</span>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 </nav>
 
-<button class="sidebar-toggle" id="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+<button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle Navigation">
+    <i class="fa fa-bars"></i>
+</button>
 
 <script>
-function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('hidden');
+function toggleCategory(groupId) {
+    const group = document.getElementById(groupId);
+    const wasActive = group.classList.contains('active-group');
+    
+    // Close other groups in the same pillar optionally, or just toggle
+    // For better UX, we just toggle the current one
+    group.classList.toggle('active-group');
 }
 
-// Active link detection
+// Sidebar toggle for mobile
+document.getElementById('sidebar-toggle').addEventListener('click', function() {
+    document.getElementById('sidebar').classList.toggle('mobile-visible');
+});
+
+// Auto-expand active group on load
 document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('.sidebar-link');
-    const currentPath = window.location.pathname;
-    
-    links.forEach(link => {
-        if (link.getAttribute('href') === currentPath) {
-            link.classList.add('active');
+    const activeSublink = document.querySelector('.sidebar-sublink.active');
+    if (activeSublink) {
+        const parentGroup = activeSublink.closest('.category-group');
+        if (parentGroup) {
+            parentGroup.classList.add('active-group');
         }
-    });
+    }
 });
 </script>

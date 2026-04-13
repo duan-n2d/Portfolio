@@ -1,0 +1,73 @@
+pillars:
+  - title: "💻 Foundation & Systems"
+    id: "foundation"
+    categories:
+      - title: "Computer Science"
+        url: "/learning/Computer-Science/"
+        icon: "fa-code"
+        items:
+          - title: "Algorithms"
+            url: "/learning/Computer-Science/Algorithms/"
+          - title: "System Design"
+            url: "/learning/Computer-Science/System-Design/"
+
+  - title: "🏗️ Data Infrastructure"
+    id: "infrastructure"
+    categories:
+      - title: "Data Engineering"
+        url: "/learning/Data-Engineer/"
+        icon: "fa-database"
+        items:
+          - title: "Apache Airflow"
+            url: "/learning/Data-Engineer/Airflow/intro-to-airflow.html"
+          - title: "Apache Kafka"
+            url: "/learning/Data-Engineer/Kafka/"
+          - title: "Scala"
+            url: "/learning/Data-Engineer/Scala/"
+          - title: "Data Structures"
+            url: "/learning/Data-Engineer/Data-Structure/"
+      - title: "Data Analytics"
+        url: "/learning/Data-Analyst/"
+        icon: "fa-line-chart"
+        items:
+          - title: "SQL Mastery"
+            url: "/learning/Data-Analyst/SQL/"
+          - title: "Statistics"
+            url: "/learning/Data-Analyst/Statistic/"
+          - title: "PowerBI"
+            url: "/learning/Data-Analyst/PowerBI/"
+
+  - title: "🤖 Intelligent Systems"
+    id: "intelligence"
+    categories:
+      - title: "Data Science"
+        url: "/learning/Data-Science/"
+        icon: "fa-flask"
+        items:
+          - title: "Python Fundamentals"
+            url: "/learning/Data-Science/Python/"
+          - title: "Machine Learning"
+            url: "/learning/Data-Science/Machine Learning/"
+      - title: "AI Applications"
+        url: "/learning/AI-Applications/"
+        icon: "fa-robot"
+        items:
+          - title: "AI in Data Engineering"
+            url: "/learning/AI-Applications/ai-in-data-eng.html"
+          - title: "NLP Fundamentals"
+            url: "/learning/AI-Applications/nlp-fundamentals.html"
+          - title: "LLM Deep Dive"
+            url: "/learning/AI-Applications/llm-architecture-deep-dive.html"
+          - title: "MongoDB AI Use Cases"
+            url: "/learning/AI-Applications/mongodb-ai-use-cases.html"
+
+external_links:
+  - title: "Portfolio"
+    url: "https://duan-n2d.github.io/Portfolio/"
+    icon: "fa-briefcase"
+  - title: "GitHub"
+    url: "https://github.com/duan-n2d"
+    icon: "fa-github"
+  - title: "LinkedIn"
+    url: "https://www.linkedin.com/in/duannguyen2606"
+    icon: "fa-linkedin"
