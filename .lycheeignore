@@ -1,9 +1,9 @@
 # Ignore Liquid Variables
-{{\s*.*\s*}}
-{%\s*.*\s*%}
-{{\s*post\.link\s*}}
-{{\s*base_path\s*}}
-{{\s*site\.baseurl\s*}}
+\{\{\s*.*\s*\}\}
+\{\%\s*.*\s*\%\}
+\{\{\s*post\.link\s*\}\}
+\{\{\s*base_path\s*\}\}
+\{\{\s*site\.baseurl\s*\}\}
 
 # Ignore Template Folders
 _includes/
@@ -11,25 +11,25 @@ _layouts/
 _sass/
 
 # Ignore common placeholders
-https://www.linkedin.com/in/{{.*}}
-https://twitter.com/{{.*}}
-https://github.com/{{.*}}
-https://www.facebook.com/{{.*}}
-https://www.instagram.com/{{.*}}
+https://www.linkedin.com/in/\{\{.*\}\}
+https://twitter.com/\{\{.*\}\}
+https://github.com/\{\{.*\}\}
+https://www.facebook.com/\{\{.*\}\}
+https://www.instagram.com/\{\{.*\}\}
 
 # Ignore specific broken legacy links identified in logs
 https://api.staticman.net/v1/entry/.*
-https://www.youtube.com/user/{{.*}}
-https://dribbble.com/{{.*}}
-https://www.flickr.com/{{.*}}
-https://keybase.io/{{.*}}
-https://lastfm.com/user/{{.*}}
-https://soundcloud.com/{{.*}}
-https://kaggle.com/{{.*}}
-https://en.wikipedia.org/wiki/User:{{.*}}
-https://www.xing.com/profile/{{.*}}
-https://vine.co/u/{{.*}}
-https://bitbucket.org/{{.*}}
-https://foursquare.com/{{.*}}
-https://www.goodreads.com/{{.*}}
+https://www.youtube.com/user/\{\{.*\}\}
+https://dribbble.com/\{\{.*\}\}
+https://www.flickr.com/\{\{.*\}\}
+https://keybase.io/\{\{.*\}\}
+https://lastfm.com/user/\{\{.*\}\}
+https://soundcloud.com/\{\{.*\}\}
+https://kaggle.com/\{\{.*\}\}
+https://en.wikipedia.org/wiki/User:\{\{.*\}\}
+https://www.xing.com/profile/\{\{.*\}\}
+https://vine.co/u/\{\{.*\}\}
+https://bitbucket.org/\{\{.*\}\}
+https://foursquare.com/\{\{.*\}\}
+https://www.goodreads.com/\{\{.*\}\}
 https://www.youtube.com/watch?v=O_HyZ5aW76c
