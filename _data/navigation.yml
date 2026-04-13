@@ -2,19 +2,8 @@ main:
   - title: "Home"
     url: /
   
-  - title: "Academic Hub"
-    url: /academic/
-    sub:
-      - title: "Overview"
-        url: /academic/
-      - title: "CV"
-        url: /academic/cv/
-      - title: "Publications"
-        url: /academic/publications/
-      - title: "Talks"
-        url: /academic/talks/
-      - title: "Teaching"
-        url: /academic/teaching/
+  - title: "Resume"
+    url: /resume/
 
   - title: "Learning Journey"
     url: /learning/

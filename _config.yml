@@ -7,20 +7,11 @@ baseurl: "/Portfolio" # Important: GitHub Pages project site
 url: "https://duan-n2d.github.io"
 talkmap_link: false
 
-# Collections from Academic Hub
+# Collections
 collections:
-  teaching:
+  posts:
     output: true
-    permalink: /academic/:collection/:path/
-  publications:
-    output: true
-    permalink: /academic/:collection/:path/
-  portfolio:
-    output: true
-    permalink: /academic/:collection/:path/
-  talks:
-    output: true
-    permalink: /academic/:collection/:path/
+    permalink: /posts/:year/:month/:day/:title/
 
 # Markdown settings
 markdown: kramdown
@@ -48,11 +39,6 @@ defaults:
     values:
       layout: "default"
       sidebar: true
-  - scope:
-      path: "academic"
-    values:
-      layout: "single" # Keeping academicpages style for its pages
-      author_profile: true
 
 sass:
   style: compressed

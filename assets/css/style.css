@@ -517,36 +517,41 @@ section {
     top: 100%;
     left: 0;
     background: #fff;
-    min-width: 200px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-width: 220px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     z-index: 10000;
-    padding: 10px 0;
+    padding: 15px 0;
     list-style: none;
-    border-radius: 0 0 4px 4px;
+    border-radius: 0 0 8px 8px;
+    border-top: 3px solid #0469ef;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transform: translateY(10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#nav-main .dropdown li {
+#nav-main li.has-dropdown:hover > .dropdown {
     display: block;
-    width: 100%;
-    text-align: left;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #nav-main .dropdown li a {
     height: auto;
-    line-height: 1.5;
-    padding: 10px 20px;
+    line-height: normal;
+    padding: 12px 25px;
     text-transform: none;
-    color: #333;
+    color: #444;
+    font-weight: 500;
     border-bottom: none !important;
 }
 
 #nav-main .dropdown li a:hover {
-    background-color: #f9f9f9;
-    color: #e4473c;
+    background-color: #f8faff;
+    color: #0469ef;
     opacity: 1;
+    padding-left: 30px;
 }
 
 /*Navigation Solid*/
@@ -587,7 +592,7 @@ section {
 
 #header.nav-solid .social-icons a:hover {
     opacity: 1;
-    color: #e4473c;
+    color: #0469ef;
 }
 
 /* Responsive Nav Styling */
@@ -2409,11 +2414,11 @@ blockquote {
     --sidebar-bg: rgba(255, 255, 255, 0.95);
     --sidebar-glass-bg: rgba(255, 255, 255, 0.85);
     --sidebar-border: rgba(0, 0, 0, 0.1);
-    --accent-color: #e4473c; /* Existing brand color */
+    --accent-color: #0469ef; /* Brand Blue from Logo */
     --pillar-label: #888;
     --text-primary: #333;
     --text-secondary: #666;
-    --hover-bg: rgba(228, 71, 60, 0.05);
+    --hover-bg: rgba(4, 105, 239, 0.05);
     --transition-speed: 0.3s;
 }
 

@@ -4,8 +4,11 @@
   /* Colors - Merkle/Dentsu inspired */
   --primary-color: #003366;    /* Deep Merkle Blue */
   --secondary-color: #00AEEF;  /* Tech Blue */
-  --accent-color: #FF2D55;     /* Action Red/Pink */
+  --accent-color: #0469ef;     /* Action Red/Pink */
   --bg-color: #F9FBFF;         /* Subtle Light Blue/Grey */
+  --brand-primary: #0469ef;
+  --brand-primary-light: #3688f2;
+  --brand-primary-dark: #0352ba;
   --text-primary: #1A1A1A;
   --text-secondary: #4A4A4A;
   --border-color: #E0E0E0;

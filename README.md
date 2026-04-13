@@ -1,10 +1,10 @@
 # 🚀 Unified Developer Portfolio & Ecosystem
 
-Welcome to my unified developer ecosystem! This repository consolidates three primary hubs into a single, high-performance Jekyll-based platform:
+Welcome to my unified developer ecosystem! This repository consolidates two primary hubs into a single, high-performance Jekyll-based platform:
 
 1.  **Personal Portfolio**: A high-impact landing page reflecting my current focus as a Data Engineer.
-2.  **Academic Hub**: A professional scholarly showcase including my CV, publications, and teaching materials.
-3.  **Learning Journey**: A structured technical knowledge base covering Data Engineering, Data Science, AI, and CS fundamentals.
+2.  **Learning Journey**: A structured technical knowledge base covering Data Engineering, Data Science, AI, and CS fundamentals.
+3.  **Resume**: A direct PDF view of my latest professional background.
 
 ---
 
@@ -13,20 +13,17 @@ Welcome to my unified developer ecosystem! This repository consolidates three pr
 ### 🏛️ Structural Components
 - **`_data/`**: Centralized configuration.
     - `navigation.yml`: Manages the main header dropdowns and logical grouping.
-    - `authors.yml`: profile data for the sidebar and author tags.
+    - `learning_nav.yml`: Specifically manages the hierarchical learning sidebar.
 - **`_includes/`**: Modular Liquid components.
     - `header.html`: Implements the dynamic, nested navigation system.
     - `sidebar-learning.html`: The specialized technical navigation sidebar.
-    - `sidebar-academic.html`: Collection-based sidebar for scholarly content.
 - **`_layouts/`**: Presentation templates.
-    - `default.html`: Core structure for the Portfolio and Learning Hub.
-    - `single.html`: Specialized layout for the Academic Hub utilizing `author_profile`.
+    - `default.html`: Core structure for the entire site.
 - **`assets/`**: Shared CSS design tokens, JavaScript logic, and vendor libraries.
 
 ### 🍱 Content Hubs
-- **`/academic/`**: Hand-managed pages for CV, publications, and teaching.
 - **`/learning/`**: Categorized technical notes. Each category (e.g., `Data-Engineer`) has its own `index.md` landing page.
-- **Root Collections (`_publications/`, `_talks/`, `_teaching/`, `_portfolio/`)**: Markdown-based content for the Academic Hub's automated archive pages.
+- **`resume.md`**: Dedicated page for the PDF Resume view.
 
 ---
 
