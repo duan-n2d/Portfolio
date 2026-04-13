@@ -1,38 +1,28 @@
-# Ignore LinkedIn and other social media placeholders (using literal strings to avoid regex noise)
-https://www.linkedin.com/in/{{
-https://twitter.com/{{
-https://github.com/{{
-https://www.facebook.com/{{
-https://www.instagram.com/{{
-https://www.linkedin.com/in/%7B%7B
+# Ignore Liquid Variables and placeholders (escaped for Lychee regex engine)
+\{\{.*\}\}
+\{%.*\%\}
+\{\{\s*base_path\s*\}\}
+\{\{\s*site\.baseurl\s*\}\}
+\{\{\s*post\.link\s*\}\}
 
-# Ignore 429 (Too Many Requests) from Instagram/LinkedIn
-https://www.instagram.com/.*
-https://www.linkedin.com/.*
+# Ignore common social media placeholders with variables
+https://www\.linkedin\.com/in/\{\{.*\}\}
+https://twitter\.com/\{\{.*\}\}
+https://github\.com/\{\{.*\}\}
+https://www\.facebook\.com/\{\{.*\}\}
+https://www\.instagram\.com/\{\{.*\}\}
 
-# Ignore specific broken legacy links or non-existent files identified in logs
-https://www.youtube.com/watch?v=O_HyZ5aW76c
-https://github.com/academicpages/academicpages.github.io/blob/master/_talks/talkmap.ipynb
-https://api.staticman.net/v1/entry/.*
+# Ignore 429 errors (Too Many Requests) from platforms that block scrapers
+https://www\.instagram\.com/.*
+https://www\.linkedin\.com/.*
+https://twitter\.com/.*
 
-# Ignore placeholder variables that might survive the build (e.g. in JS comments)
-\{\{\s*.*\s*\}\}
-{%\s*.*\s*%}
-base_path
-site.baseurl
-author.github
-author.foursquare
-author.goodreads
-author.wikipedia
-author.youtube
-author.instagram
-author.soundcloud
-author.vine
-author.xing
-author.lastfm
-author.flickr
-author.bitbucket
-author.keybase
-author.kaggle
-author.dribbble
-author.googlescholar
+# Ignore specific broken legacy links confirmed in logs
+https://api\.staticman\.net/v1/entry/.*
+https://www\.youtube\.com/watch\?v=O_HyZ5aW76c
+
+# Ignore system directories (though the workflow now scans _site)
+_includes/
+_layouts/
+_sass/
+/Users/.*
