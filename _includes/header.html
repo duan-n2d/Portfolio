@@ -4,8 +4,8 @@
             <div class="col-1">
                 <div id="logo">
                     <a href="{{ site.baseurl }}/">
-                        <img src="{{ site.baseurl }}/assets/images/logo.png" id="banner-logo" alt="NDoubleD Logo"/>
-                        <img src="{{ site.baseurl }}/assets/images/logo-2.png" id="navigation-logo" alt="NDoubleD Logo Sticky"/>
+                        <img src="{{ site.baseurl }}/images/logo.png" id="banner-logo" alt="NDoubleD Logo"/>
+                        <img src="{{ site.baseurl }}/images/logo-2.png" id="navigation-logo" alt="NDoubleD Logo Sticky"/>
                     </a>
                 </div>
 
@@ -20,10 +20,18 @@
 
                 <nav id="nav-main">
                     <ul>
-                        <li><a href="{{ site.baseurl }}/">Portfolio</a></li>
-                        <li><a href="{{ site.baseurl }}/academic/">Academic Hub</a></li>
-                        <li><a href="{{ site.baseurl }}/learning/">Learning Journey</a></li>
-                        <li><a href="{{ site.baseurl }}/admin/">Admin</a></li>
+                    {% for link in site.data.navigation.main %}
+                        <li class="{% if link.sub %}has-dropdown{% endif %}">
+                            <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                            {% if link.sub %}
+                            <ul class="dropdown">
+                                {% for sublink in link.sub %}
+                                <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+                                {% endfor %}
+                            </ul>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
                     </ul>
                 </nav>
 

@@ -1,4 +1,3 @@
-# main links links
 main:
   - title: "Home"
     url: /
@@ -6,6 +5,8 @@ main:
   - title: "Academic Hub"
     url: /academic/
     sub:
+      - title: "Overview"
+        url: /academic/
       - title: "CV"
         url: /academic/cv/
       - title: "Publications"
@@ -17,6 +18,19 @@ main:
 
   - title: "Learning Journey"
     url: /learning/
+    sub:
+      - title: "Overview"
+        url: /learning/
+      - title: "Data Engineering"
+        url: /learning/Data-Engineer/
+      - title: "Data Science"
+        url: /learning/Data-Science/
+      - title: "AI Applications"
+        url: /learning/AI-Applications/
+      - title: "Data Analyst"
+        url: /learning/Data-Analyst/
+      - title: "Computer Science"
+        url: /learning/Computer-Science/
 
   - title: "Admin"
     url: /admin/

@@ -13,7 +13,10 @@
 
     <div id="wrapper">
         {% include header.html %}
-        {% include sidebar-learning.html %}
+        
+        {% if page.url contains '/learning/' and page.url != '/learning/index.html' and page.url != '/learning/' %}
+            {% include sidebar-learning.html %}
+        {% endif %}
         
         <main id="content" class="clearfix">
             <div class="content-container">

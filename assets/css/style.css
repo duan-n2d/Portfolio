@@ -500,6 +500,55 @@ section {
     opacity: 0.6;
 }
 
+/* Dropdown Menu Styles */
+#nav-main ul li {
+    position: relative;
+}
+
+#nav-main li.has-dropdown:hover > .dropdown {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+#nav-main .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 10000;
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 0 0 4px 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#nav-main .dropdown li {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+#nav-main .dropdown li a {
+    height: auto;
+    line-height: 1.5;
+    padding: 10px 20px;
+    text-transform: none;
+    color: #333;
+    border-bottom: none !important;
+}
+
+#nav-main .dropdown li a:hover {
+    background-color: #f9f9f9;
+    color: #e4473c;
+    opacity: 1;
+}
+
 /*Navigation Solid*/
 
 #header.nav-solid [class*='col-'] {
