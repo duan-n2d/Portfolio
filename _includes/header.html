@@ -1,45 +1,44 @@
-<header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-    <div id="header" class="nav-collapse">
-        <div class="row clearfix">
-            <div class="col-1">
-                <div id="logo">
-                    <a href="{{ site.baseurl }}/">
-                        <img src="{{ site.baseurl }}/images/logo.png" id="banner-logo" alt="NDoubleD Logo"/>
-                        <img src="{{ site.baseurl }}/images/logo-2.png" id="navigation-logo" alt="NDoubleD Logo Sticky"/>
-                    </a>
-                </div>
-
-                <aside>
-                    <ul class="social-icons">
-                        <li><a target="_blank" href="https://www.facebook.com/duyduannguyen.it.cfc/"><i class="fa fa-facebook fa-1x"></i><span>Facebook</span></a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/_n2d.duan_/"><i class="fa fa-instagram fa-1x"></i><span>Instagram</span></a></li>
-                        <li><a target="_blank" href="https://www.linkedin.com/in/duannguyen2606"><i class="fa fa-linkedin fa-1x"></i><span>Linkedin</span></a></li>
-                        <li><a target="_blank" href="https://github.com/duan-n2d"><i class="fa fa-github fa-1x"></i><span>Github</span></a></li>
-                    </ul>
-                </aside>
-
-                <nav id="nav-main">
-                    <ul>
-                    {% for link in site.data.navigation.main %}
-                        <li class="{% if link.sub %}has-dropdown{% endif %}">
-                            <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
-                            {% if link.sub %}
-                            <ul class="dropdown">
-                                {% for sublink in link.sub %}
-                                <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
-                                {% endfor %}
-                            </ul>
-                            {% endif %}
-                        </li>
-                    {% endfor %}
-                    </ul>
-                </nav>
-
-                <div id="nav-trigger"><span></span></div>
-                <nav id="nav-mobile"></nav>
-            </div>
+<header id="header" class="nav-collapse">
+    <div class="row clearfix">
+        <!-- Logo Section -->
+        <div id="logo">
+            <a href="{{ site.baseurl }}/">
+                <img src="{{ site.baseurl }}/images/logo.png" id="banner-logo" alt="NDoubleD Logo"/>
+            </a>
         </div>
+
+        <!-- Navigation Menu -->
+        <nav id="nav-main">
+            <ul>
+                {% for link in site.data.navigation.main %}
+                <li class="{% if link.sub %}has-dropdown{% endif %} {% if page.url == link.url %}active{% endif %}">
+                    <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                    {% if link.sub %}
+                    <ul class="dropdown">
+                        {% for sublink in link.sub %}
+                        <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <!-- Social Icons & Trigger -->
+        <aside>
+            <ul class="social-icons">
+                <li><a target="_blank" href="https://www.facebook.com/duyduannguyen.it.cfc/"><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/_n2d.duan_/"><i class="fa fa-instagram"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/duannguyen2606"><i class="fa fa-linkedin"></i></a></li>
+                <li><a target="_blank" href="https://github.com/duan-n2d"><i class="fa fa-github"></i></a></li>
+            </ul>
+            <div id="nav-trigger"><span></span></div>
+        </aside>
+        
+        <nav id="nav-mobile"></nav>
     </div>
+</header>
 
     {% if page.url == "/" or page.url == "/index.html" %}
     <div id="banner-content" class="row clearfix">
