@@ -2,9 +2,6 @@ main:
   - title: "Home"
     url: /
   
-  - title: "About"
-    url: /about/
-
   - title: "Resume"
     url: /resume/
 
@@ -26,6 +23,9 @@ main:
         url: /learning/Data-Analyst/
       - title: "Computer Science"
         url: /learning/Computer-Science/
+
+  - title: "About"
+    url: /about/
 
   - title: "Admin"
     url: /admin/

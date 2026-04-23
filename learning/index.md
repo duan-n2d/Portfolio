@@ -26,50 +26,60 @@ title: "Home"
         
         <div class="row">
             <div class="col-3">
-                <h3><a href="./Data-Engineer/">Data Engineering</a></h3>
-                <p>
-                    <a href="./Data-Engineer/Airflow/intro-to-airflow.html">Apache Airflow</a>,
-                    <a href="./Data-Engineer/Kafka/">Apache Kafka</a>,
-                    <a href="./Data-Engineer/Scala/">Scala</a>,
-                    <a href="./Data-Engineer/Data-Structure/">Data Structures</a>
-                </p>
+                <div class="learning-card">
+                    <h3><a href="./Data-Engineer/">Data Engineering</a></h3>
+                    <p>
+                        <a href="./Data-Engineer/Airflow/intro-to-airflow.html">Apache Airflow</a>,
+                        <a href="./Data-Engineer/Kafka/">Apache Kafka</a>,
+                        <a href="./Data-Engineer/Scala/">Scala</a>,
+                        <a href="./Data-Engineer/Data-Structure/">Data Structures</a>
+                    </p>
+                </div>
             </div>
             
             <div class="col-3">
-                <h3><a href="./Data-Science/">Data Science</a></h3>
-                <p>
-                    <a href="./Data-Science/Python/">Python</a>,
-                    <a href="./Data-Science/Machine%20Learning/">Machine Learning</a>
-                </p>
+                <div class="learning-card">
+                    <h3><a href="./Data-Science/">Data Science</a></h3>
+                    <p>
+                        <a href="./Data-Science/Python/">Python</a>,
+                        <a href="./Data-Science/Machine%20Learning/">Machine Learning</a>
+                    </p>
+                </div>
             </div>
 
             <div class="col-3">
-                <h3><a href="./AI-Applications/">AI Applications</a></h3>
-                <p>
-                    <a href="./AI-Applications/llm-fundamentals.html">LLM</a>,
-                    <a href="./AI-Applications/nlp-fundamentals.html">NLP</a>,
-                    <a href="./AI-Applications/ai-agents.html">Agents</a>,
-                    <a href="./AI-Applications/ai-in-data-eng.html">AI in DE</a>
-                </p>
+                <div class="learning-card">
+                    <h3><a href="./AI-Applications/">AI Applications</a></h3>
+                    <p>
+                        <a href="./AI-Applications/llm-fundamentals.html">LLM</a>,
+                        <a href="./AI-Applications/nlp-fundamentals.html">NLP</a>,
+                        <a href="./AI-Applications/ai-agents.html">Agents</a>,
+                        <a href="./AI-Applications/ai-in-data-eng.html">AI in DE</a>
+                    </p>
+                </div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-2">
-                <h3><a href="./Data-Analyst/">Data Analyst</a></h3>
-                <p>
-                    <a href="./Data-Analyst/SQL/">SQL Mastery</a>,
-                    <a href="./Data-Analyst/Statistic/">Statistics</a>,
-                    <a href="./Data-Analyst/PowerBI/">PowerBI</a>
-                </p>
+                <div class="learning-card">
+                    <h3><a href="./Data-Analyst/">Data Analyst</a></h3>
+                    <p>
+                        <a href="./Data-Analyst/SQL/">SQL Mastery</a>,
+                        <a href="./Data-Analyst/Statistic/">Statistics</a>,
+                        <a href="./Data-Analyst/PowerBI/">PowerBI</a>
+                    </p>
+                </div>
             </div>
 
             <div class="col-2">
-                <h3><a href="./Computer-Science/">Computer Science</a></h3>
-                <p>
-                    <a href="./Computer-Science/Algorithms/">Algorithms</a>,
-                    <a href="./Computer-Science/System-Design/">System Design</a>
-                </p>
+                <div class="learning-card">
+                    <h3><a href="./Computer-Science/">Computer Science</a></h3>
+                    <p>
+                        <a href="./Computer-Science/Algorithms/">Algorithms</a>,
+                        <a href="./Computer-Science/System-Design/">System Design</a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>

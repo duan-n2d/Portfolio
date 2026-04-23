@@ -40,18 +40,6 @@
             </div>
         </div>
         {% endfor %}
-
-        <!-- Quick Links -->
-        <div class="sidebar-pillar">
-            <div class="pillar-title">🔗 Quick Links</div>
-            <div class="pillar-categories">
-                {% for link in site.data.learning_nav.external_links %}
-                <a href="{{ link.url }}" class="sidebar-link external" target="_blank">
-                    <i class="fa {{ link.icon }}"></i> <span>{{ link.title }}</span>
-                </a>
-                {% endfor %}
-            </div>
-        </div>
     </div>
 </nav>
 

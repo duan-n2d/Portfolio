@@ -505,6 +505,7 @@ section {
 
 #header {
     font-size: 13px;
+    background: #FFFFFF;
 }
 
 #header aside {
@@ -521,6 +522,7 @@ section {
     line-height: 71px;
     display: block;
     padding: 0 10px;
+    font-weight: bold;
 }
 
 #header nav a:hover {
@@ -2293,6 +2295,97 @@ blockquote {
         font-size: 48px;
     }
 
+    /*------------------------------------------------------------------------------------------*/
+/* Learning Cards & Content Cards */
+/*------------------------------------------------------------------------------------------*/
+
+.learning-card {
+    background: var(--bg-color);
+    padding: var(--space-md);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-medium);
+    margin-bottom: var(--space-md);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.learning-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.learning-card h3 {
+    margin-top: 0;
+    margin-bottom: var(--space-xs);
+    font-size: 22px;
+}
+
+.learning-card h3 a {
+    color: var(--primary-color);
+}
+
+.learning-card h3 a:hover {
+    color: var(--hover-color);
+}
+
+.learning-card p {
+    color: var(--text-secondary);
+    margin-bottom: 0;
+    line-height: inherit;
+}
+
+.learning-card a {
+    font-weight: 500;
+}
+
+.content-card {
+    background: var(--white);
+    padding: var(--space-lg);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: var(--transition-medium);
+    border: 1px solid var(--border-color);
+    margin-bottom: var(--space-md);
+    height: 100%;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--hover-color);
+}
+
+.content-card h4 {
+    color: var(--primary-color);
+    margin-bottom: var(--space-xs);
+    font-weight: 700;
+}
+
+.content-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Base formatting for learning pages content */
+.learning-content h1, .learning-content h2, .learning-content h3 {
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-sm);
+}
+.learning-content p, .learning-content ul, .learning-content ol {
+    margin-bottom: var(--space-md);
+    line-height: 1.7;
+}
+.learning-content li {
+    margin-bottom: var(--space-xxs);
+}
+
+/* Sidebar Custom Properties */
     /* Hide Elements */
     a#scrollUp {
         display: none !important;
