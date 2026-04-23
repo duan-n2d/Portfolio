@@ -3,32 +3,39 @@ layout: default
 title: "Data Science - Learning Journey"
 ---
 
-# 🧪 Data Science
+<div class="learning-content">
 
-Unlock insights from data using statistical methods, machine learning, and advanced programming. This section covers the full data science lifecycle.
+# Data Science
 
-## 📚 Core Topics
+Unlock insights from data using statistical methods, machine learning, and advanced programming.
 
-<div class="topic-grid">
+## Core Topics
 
-#### 🐍 Python for Data Science
-**[→ Read Full Guide](./Python/index.html)**
-Essential libraries and patterns for data manipulation, cleaning, and exploratory data analysis.
-
-#### 🤖 Machine Learning
-**[→ Read Full Guide](./Machine%20Learning/index.html)**
-From linear regression to deep learning. Understanding algorithms, model evaluation, and deployment.
-
+<div class="row">
+    <div class="col-6">
+        <div class="learning-card">
+            <h3><a href="./Python/index.html">Python for Data Science</a></h3>
+            <p>Essential libraries and patterns for data manipulation, cleaning, and exploratory data analysis.</p>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="learning-card">
+            <h3><a href="./Machine%20Learning/index.html">Machine Learning</a></h3>
+            <p>From linear regression to deep learning. Understanding algorithms, model evaluation, and deployment.</p>
+        </div>
+    </div>
 </div>
 
 ---
 
-## 🎯 Learning Path
+## Learning Path
 
 1. **Foundations**: [Python for Data Science](./Python/index.html)
 2. **Core Algorithms**: [Machine Learning](./Machine Learning/index.html)
 
 ---
 
-**Last Updated**: April 2026
-**Status**: Active 🟢
+**Last Updated**: April 2026  
+**Status**: Active
+
+</div>

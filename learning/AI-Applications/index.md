@@ -3,69 +3,96 @@ layout: default
 title: "AI Applications - Tech Trends"
 ---
 
-# 🤖 AI Applications & Modern Tech Trends
+<div class="learning-content">
+
+# AI Applications & Modern Tech Trends
 
 Explore cutting-edge AI technologies, from foundational concepts to production-ready systems. This section covers the present and future of artificial intelligence.
 
-## 📚 Core Topics
+## Core Topics
 
-### 🧠 Understanding Language Models & AI
+### Understanding Language Models & AI
 
-<div class="topic-grid">
+<div class="row">
+    <div class="col-6">
+        <div class="learning-card">
+            <h3><a href="./llm-fundamentals.html">LLM Fundamentals</a></h3>
+            <p>Master the fundamentals of Large Language Models, including architecture, how they work, popular models, and real-world applications.</p>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="learning-card">
+            <h3><a href="./nlp-fundamentals.html">NLP Fundamentals</a></h3>
+            <p>The cornerstone technology enabling machines to understand and generate human language. Core tasks, techniques, and modern approaches.</p>
+        </div>
+    </div>
+</div>
 
-#### Large Language Models (LLM) Fundamentals
-**[→ Read Full Guide](./llm-fundamentals.html)**
-Master the fundamentals of Large Language Models, including architecture, how they work, popular models, and real-world applications.
-
-#### NLP Fundamentals: Natural Language Processing
-**[→ Read Full Guide](./nlp-fundamentals.html)**
-The cornerstone technology enabling machines to understand and generate human language. Core tasks, techniques, and modern approaches.
-
-#### LLM Architecture Deep Dive
-**[→ Read Full Guide](./llm-architecture-deep-dive.html)**
-Technical exploration of transformer architecture, attention mechanisms, modern variations, training optimization, and future architectures.
-
-#### Relative LLM Models: Comprehensive Comparison
-**[→ Read Full Guide](./relative-llm-models-comparison.html)**
-Detailed comparison of GPT-4, Claude, Gemini, Llama, and other models. Selection guide to choose the right model for your needs.
-
+<div class="row" style="margin-top: 20px;">
+    <div class="col-6">
+        <div class="learning-card">
+            <h3><a href="./llm-architecture-deep-dive.html">Architecture Deep Dive</a></h3>
+            <p>Technical exploration of transformer architecture, attention mechanisms, modern variations, training optimization, and future architectures.</p>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="learning-card">
+            <h3><a href="./relative-llm-models-comparison.html">Models Comparison</a></h3>
+            <p>Detailed comparison of GPT-4, Claude, Gemini, Llama, and other models. Selection guide to choose the right model for your needs.</p>
+        </div>
+    </div>
 </div>
 
 ---
 
-### 🔧 Practical Implementation & Automation
+### Practical Implementation & Automation
 
-<div class="topic-grid">
+<div class="row">
+    <div class="col-6">
+        <div class="learning-card">
+            <h3><a href="./ai-agents.html">AI Agents</a></h3>
+            <p>Learn how AI agents think, reason, and act. Architecture, components, frameworks, and real-world applications of autonomous systems.</p>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="learning-card">
+            <h3><a href="./chatbot-conversational-ai.html">Chatbots & Conversational AI</a></h3>
+            <p>Build intelligent conversational systems. From intent recognition to multi-turn dialogue management and deployment strategies.</p>
+        </div>
+    </div>
+</div>
 
-#### AI Agents: Autonomous Decision-Making Systems
-**[→ Read Full Guide](./ai-agents.html)**
-Learn how AI agents think, reason, and act. Architecture, components, frameworks, and real-world applications of autonomous systems.
-
-#### Chatbots & Conversational AI
-**[→ Read Full Guide](./chatbot-conversational-ai.html)**
-Build intelligent conversational systems. From intent recognition to multi-turn dialogue management and deployment strategies.
-
-#### N8N & MCP: Workflow Automation & Integration
-**[→ Read Full Guide](./n8n-mcp-workflow-automation.html)**
-Automate complex workflows and integrate AI with external systems. N8N workflows vs. MCP protocol for seamless integration.
-
+<div class="row" style="margin-top: 20px;">
+    <div class="col-6">
+        <div class="learning-card">
+            <h3><a href="./n8n-mcp-workflow-automation.html">Workflow Automation & Integration</a></h3>
+            <p>Automate complex workflows and integrate AI with external systems. N8N workflows vs. MCP protocol for seamless integration.</p>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="learning-card">
+            <h3><a href="./ai-in-data-eng.html">AI in Data Engineering</a></h3>
+            <p>Leveraging AI to enhance ETL pipelines, data quality, and engineering workflows.</p>
+        </div>
+    </div>
 </div>
 
 ---
 
-### 🗄️ Data & Infrastructure for AI
+### Data & Infrastructure for AI
 
-<div class="topic-grid">
-
-#### MongoDB & AI: Real-World Use Cases
-**[→ Read Full Guide](./mongodb-ai-use-cases.html)**
-Leverage MongoDB's flexible schema and vector search for AI applications. Enterprise patterns for personalization, fraud detection, content search, and real-time analytics.
-
+<div class="row">
+    <div class="col-6">
+        <div class="learning-card">
+            <h3><a href="./mongodb-ai-use-cases.html">MongoDB & AI</a></h3>
+            <p>Leverage MongoDB's flexible schema and vector search for AI applications. Enterprise patterns for personalization and real-time analytics.</p>
+        </div>
+    </div>
 </div>
 
 ---
 
-## 🎯 Learning Paths
+## Learning Paths
 
 ### Path 1: AI Fundamentals to Production
 1. **Start**: [NLP Fundamentals](./nlp-fundamentals.html) - Language basics
@@ -88,7 +115,7 @@ Leverage MongoDB's flexible schema and vector search for AI applications. Enterp
 
 ---
 
-## 📊 Tech Landscape Timeline
+## Tech Landscape Timeline
 
 ```
 2017-2019
@@ -121,7 +148,7 @@ Leverage MongoDB's flexible schema and vector search for AI applications. Enterp
 
 ---
 
-## 🔑 Key Terms & Concepts
+## Key Terms & Concepts
 
 | Term | Definition | Where to Learn |
 |------|-----------|-----------------|
@@ -138,7 +165,7 @@ Leverage MongoDB's flexible schema and vector search for AI applications. Enterp
 
 ---
 
-## 💡 Use Case Solutions
+## Use Case Solutions
 
 ### Customer Support
 - **Chatbots** for initial triage

@@ -3,7 +3,9 @@ layout: default
 title: "Apache Airflow"
 ---
 
-# 🌪️ Apache Airflow - Production Workflow Orchestration
+<div class="learning-content">
+
+# Apache Airflow - Production Workflow Orchestration
 
 Apache Airflow is a powerful, open-source platform to programmatically author, schedule, and monitor workflows. It's the industry standard for data pipeline orchestration.
 
@@ -18,7 +20,7 @@ Apache Airflow is a powerful, open-source platform to programmatically author, s
 
 ---
 
-## 🎯 Core Concepts
+## Core Concepts
 
 ### What is Apache Airflow?
 
@@ -39,7 +41,7 @@ Airflow is a workflow orchestration tool that allows you to:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Installation and Setup
 
@@ -81,7 +83,7 @@ airflow_home/
 
 ---
 
-## 🔧 Building DAGs
+## Building DAGs
 
 ### Simple DAG Example
 
@@ -120,6 +122,13 @@ def transform_data(**context):
     data = ti.xcom_pull(task_ids='extract')
     print(f"Transforming {data['rows']} rows...")
     return f"Transformed {data['rows']} rows"
+
+# Define tasks
+extract_task = PythonOperator(
+    task_id='extract',
+    python_callable=extract_data,
+    dag=dag,
+)
 
 # Define tasks
 extract_task = PythonOperator(
@@ -170,7 +179,7 @@ task = PythonOperator(
 
 ---
 
-## 📦 Operators & Tasks
+## Operators & Tasks
 
 ### Common Operators
 
@@ -239,7 +248,7 @@ extract >> transform
 
 ---
 
-## 🎯 Advanced Features
+## Advanced Features
 
 ### Branching Logic
 
@@ -306,7 +315,7 @@ def run_job(**context):
 
 ---
 
-## ✅ Best Practices
+## Best Practices
 
 ### 1. **Idempotent Tasks**
 Every task should produce the same result when run multiple times.
@@ -383,7 +392,7 @@ airflow dags test my_dag 2024-01-01
 
 ---
 
-## 📚 Resources
+## Resources
 
 - **Official Documentation**: [airflow.apache.org](https://airflow.apache.org/)
 - **Airflow Tutorial**: Comprehensive guide on Apache Airflow
@@ -395,3 +404,5 @@ airflow dags test my_dag 2024-01-01
 **Last updated**: April 12, 2026  
 **Difficulty**: Intermediate to Advanced  
 **Prerequisites**: Python, understanding of ETL concepts
+
+</div>

@@ -28,9 +28,9 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v2
         with:
-          # Scan rendered HTML files in the _site directory for external links only
-          # Ignoring local links to bypass Jekyll index.html directory mapping issues
-          args: --verbose --no-progress --exclude-all-private --scheme https,http "./_site/**/*.html"
+          # Provide --root-dir and --remap so Lychee can parse root-relative links correctly.
+          # We still use --scheme https,http to check only external links and avoid 404s on local directories.
+          args: --verbose --no-progress --exclude-all-private --root-dir "./_site" --remap "/Portfolio/ /" --scheme https,http "./_site/**/*.html"
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

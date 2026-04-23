@@ -4,7 +4,9 @@ title: "About Me"
 permalink: /about/
 ---
 
-# 👤 About Me
+<div class="learning-content">
+
+# About Me
 
 ## Personal Information
 
@@ -40,11 +42,13 @@ Passionate **Data Engineer** with hands-on experience designing Airflow-driven p
 
 ## Connect With Me
 
-- 🔗 [GitHub](https://github.com/duan-n2d)
-- 🔗 [LinkedIn](https://www.linkedin.com/in/duannguyen2606)
-- 🔗 [Facebook](https://www.facebook.com/duyduannguyen.it.cfc/)
-- 🔗 [Instagram](https://www.instagram.com/_n2d.duan_/)
+- [GitHub](https://github.com/duan-n2d)
+- [LinkedIn](https://www.linkedin.com/in/duannguyen2606)
+- [Facebook](https://www.facebook.com/duyduannguyen.it.cfc/)
+- [Instagram](https://www.instagram.com/_n2d.duan_/)
 
 ---
 
-> 💡 _Replace placeholder values (marked with `XXXX`) with your real information._
+> _Replace placeholder values (marked with `XXXX`) with your real information._
+
+</div>
