@@ -3,7 +3,7 @@
         <!-- Logo Section -->
         <div id="logo">
             <a href="{{ site.baseurl }}/">
-                <img src="{{ site.baseurl }}/images/logo.png" id="banner-logo" alt="NDoubleD Logo"/>
+                <img src="{{ site.baseurl }}/src/images/logo.png" id="banner-logo" alt="{{ site.data.dyllan.name }} Logo"/>
             </a>
         </div>
 
@@ -28,10 +28,10 @@
         <!-- Social Icons & Trigger -->
         <aside>
             <ul class="social-icons">
-                <li><a target="_blank" href="https://www.facebook.com/duyduannguyen.it.cfc/"><i class="fa fa-facebook"></i></a></li>
-                <li><a target="_blank" href="https://www.instagram.com/_n2d.duan_/"><i class="fa fa-instagram"></i></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/duannguyen2606"><i class="fa fa-linkedin"></i></a></li>
-                <li><a target="_blank" href="https://github.com/duan-n2d"><i class="fa fa-github"></i></a></li>
+                {% if site.data.dyllan.social.facebook %}<li><a target="_blank" href="{{ site.data.dyllan.social.facebook }}"><i class="fa fa-facebook"></i></a></li>{% endif %}
+                {% if site.data.dyllan.social.instagram %}<li><a target="_blank" href="{{ site.data.dyllan.social.instagram }}"><i class="fa fa-instagram"></i></a></li>{% endif %}
+                {% if site.data.dyllan.social.linkedin %}<li><a target="_blank" href="{{ site.data.dyllan.social.linkedin }}"><i class="fa fa-linkedin"></i></a></li>{% endif %}
+                {% if site.data.dyllan.social.github %}<li><a target="_blank" href="{{ site.data.dyllan.social.github }}"><i class="fa fa-github"></i></a></li>{% endif %}
             </ul>
             <div id="nav-trigger"><span></span></div>
         </aside>
@@ -44,9 +44,9 @@
     <div id="banner-content" class="row clearfix">
         <div class="col-38">
             <div class="section-heading">
-                <h1>Duan Nguyen Duy</h1>
-                <h2>Data Engineer @ Dentsu Vietnam - Merkle (CXM)</h2>
-                <p>Architecting scalable data solutions and automated pipelines.</p>
+                <h1>{{ site.data.dyllan.name }}</h1>
+                <h2>{{ site.data.dyllan.title }} @ {{ site.data.dyllan.company }}</h2>
+                <p>{{ site.data.dyllan.tagline }}</p>
             </div>
         </div>
     </div>

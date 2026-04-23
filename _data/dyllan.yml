@@ -1,0 +1,30 @@
+# ===================================================================
+# Personal Data — Duan Nguyen Duy
+# Accessible in templates via: site.data.dyllan.<key>
+# ===================================================================
+
+name: "Duan Nguyen Duy"
+title: "Data Engineer"
+company: "Dentsu Vietnam — Merkle (CXM)"
+tagline: "Architecting scalable data solutions and automated pipelines."
+
+email: "duannguyen2606@gmail.com"
+location: "Ho Chi Minh City, Vietnam"
+
+# Social links
+social:
+  github: "https://github.com/duan-n2d"
+  linkedin: "https://www.linkedin.com/in/duannguyen2606"
+  facebook: "https://www.facebook.com/duyduannguyen.it.cfc/"
+  instagram: "https://www.instagram.com/_n2d.duan_/"
+
+# Resume / CV
+resume:
+  preview_url: "https://drive.google.com/file/d/1mgN9-ZFYJrLB09my4wIBImN9KCA6ANxA/preview"
+  download_url: "https://drive.google.com/file/d/1mgN9-ZFYJrLB09my4wIBImN9KCA6ANxA/view?usp=sharing"
+
+# Profile image (relative to site.baseurl)
+avatar: "/src/images/me/profile.jpg"
+
+# Site branding
+logo: "/src/images/logo.png"

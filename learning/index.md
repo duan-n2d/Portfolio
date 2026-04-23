@@ -26,7 +26,6 @@ title: "Home"
         
         <div class="row">
             <div class="col-3">
-                <i class="fa fa-database fa-2x"></i>
                 <h3><a href="./Data-Engineer/">Data Engineering</a></h3>
                 <p>
                     <a href="./Data-Engineer/Airflow/intro-to-airflow.html">Apache Airflow</a>,
@@ -37,7 +36,6 @@ title: "Home"
             </div>
             
             <div class="col-3">
-                <i class="fa fa-line-chart fa-2x"></i>
                 <h3><a href="./Data-Science/">Data Science</a></h3>
                 <p>
                     <a href="./Data-Science/Python/">Python</a>,
@@ -46,7 +44,6 @@ title: "Home"
             </div>
 
             <div class="col-3">
-                <i class="fa fa-robot fa-2x"></i>
                 <h3><a href="./AI-Applications/">AI Applications</a></h3>
                 <p>
                     <a href="./AI-Applications/llm-fundamentals.html">LLM</a>,
@@ -59,7 +56,6 @@ title: "Home"
 
         <div class="row">
             <div class="col-2">
-                <i class="fa fa-area-chart fa-2x"></i>
                 <h3><a href="./Data-Analyst/">Data Analyst</a></h3>
                 <p>
                     <a href="./Data-Analyst/SQL/">SQL Mastery</a>,
@@ -69,7 +65,6 @@ title: "Home"
             </div>
 
             <div class="col-2">
-                <i class="fa fa-code fa-2x"></i>
                 <h3><a href="./Computer-Science/">Computer Science</a></h3>
                 <p>
                     <a href="./Computer-Science/Algorithms/">Algorithms</a>,

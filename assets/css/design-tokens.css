@@ -1,16 +1,16 @@
 /* Shared Design Tokens - Duan Nguyen Duy (NDoubleD) */
 
 :root {
-  /* Colors - Merkle/Dentsu inspired */
-  --primary-color: #003366;    /* Deep Merkle Blue */
-  --secondary-color: #00AEEF;  /* Tech Blue */
-  --accent-color: #0469ef;     /* Action Red/Pink */
-  --bg-color: #F9FBFF;         /* Subtle Light Blue/Grey */
-  --brand-primary: #0469ef;
-  --brand-primary-light: #3688f2;
-  --brand-primary-dark: #0352ba;
-  --text-primary: #1A1A1A;
-  --text-secondary: #4A4A4A;
+  /* Colors — Brand Palette */
+  --primary-color: #6097F6;     /* Header text / headings */
+  --hover-color: #F8DE22;       /* Hover accent */
+  --bg-color: #FFFFFF;          /* Background */
+  --text-primary: #000000;      /* Body text */
+
+  /* Derived colors */
+  --secondary-color: #6097F6;
+  --accent-color: #F8DE22;
+  --text-secondary: #333333;
   --border-color: #E0E0E0;
   --white: #FFFFFF;
 
@@ -50,8 +50,8 @@ body {
 }
 
 h1, h2, h3, h4 { color: var(--primary-color); }
-a { color: var(--secondary-color); text-decoration: none; transition: var(--transition-fast); }
-a:hover { color: var(--accent-color); }
+a { color: var(--primary-color); text-decoration: none; transition: var(--transition-fast); }
+a:hover { color: var(--hover-color); }
 
 .btn-premium {
   display: inline-block;
@@ -65,7 +65,8 @@ a:hover { color: var(--accent-color); }
 }
 
 .btn-premium:hover {
+  background: var(--hover-color);
   transform: translateY(-2px);
   box-shadow: var(--shadow-lg);
-  color: var(--white);
+  color: #000000;
 }

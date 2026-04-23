@@ -3,8 +3,8 @@ backend:
   repo: duan-n2d/duan-n2d.github.io
   branch: master
 
-media_folder: "images"
-public_folder: "/images"
+media_folder: "src/images"
+public_folder: "/src/images"
 
 collections:
   - name: "posts"
@@ -19,6 +19,99 @@ collections:
       - {label: "Excerpt", name: "excerpt", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
 
+  - name: "projects"
+    label: "Projects"
+    folder: "data/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Status", name: "status", widget: "select", options: ["Completed", "In Progress", "Planned"]}
+      - {label: "Role", name: "role", widget: "string"}
+      - {label: "Tech Stack", name: "tech_stack", widget: "list"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "learning-de"
+    label: "Learning — Data Engineer"
+    folder: "data/learning/data_engineer"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "hidden", default: "data_engineer"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Difficulty", name: "difficulty", widget: "select", options: ["Beginner", "Intermediate", "Advanced"]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "learning-da"
+    label: "Learning — Data Analyst"
+    folder: "data/learning/data_analyst"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "hidden", default: "data_analyst"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Difficulty", name: "difficulty", widget: "select", options: ["Beginner", "Intermediate", "Advanced"]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "learning-ds"
+    label: "Learning — Data Science"
+    folder: "data/learning/data_science"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "hidden", default: "data_science"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Difficulty", name: "difficulty", widget: "select", options: ["Beginner", "Intermediate", "Advanced"]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "learning-ai"
+    label: "Learning — AI"
+    folder: "data/learning/ai"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "hidden", default: "ai"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Difficulty", name: "difficulty", widget: "select", options: ["Beginner", "Intermediate", "Advanced"]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "learning-systems"
+    label: "Learning — Systems"
+    folder: "data/learning/systems"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "hidden", default: "systems"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Difficulty", name: "difficulty", widget: "select", options: ["Beginner", "Intermediate", "Advanced"]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "learning-ml"
+    label: "Learning — Machine Learning"
+    folder: "data/learning/machine_learning"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "hidden", default: "machine_learning"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Difficulty", name: "difficulty", widget: "select", options: ["Beginner", "Intermediate", "Advanced"]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
   - name: "portfolio"
     label: "Portfolio Points"
     folder: "_portfolio"
@@ -27,17 +120,4 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "single"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown"}
-
-  - name: "publications"
-    label: "Publications"
-    folder: "_publications"
-    create: true
-    fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "single"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Venue", name: "venue", widget: "string"}
-      - {label: "Paper URL", name: "paperurl", widget: "string", required: false}
-      - {label: "Citation", name: "citation", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}

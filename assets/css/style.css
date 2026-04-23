@@ -550,7 +550,7 @@ section {
     padding: 15px 0;
     list-style: none;
     border-radius: 0 0 8px 8px;
-    border-top: 3px solid #0469ef;
+    border-top: 3px solid #6097F6;
     visibility: hidden;
     opacity: 0;
     transform: translateY(10px);
@@ -576,7 +576,7 @@ section {
 
 #nav-main .dropdown li a:hover {
     background-color: #f8faff;
-    color: #0469ef;
+    color: #6097F6;
     opacity: 1;
     padding-left: 30px;
 }
@@ -619,7 +619,7 @@ section {
 
 #header.nav-solid .social-icons a:hover {
     opacity: 1;
-    color: #0469ef;
+    color: #6097F6;
 }
 
 /* Responsive Nav Styling */
@@ -860,7 +860,7 @@ h6 {
 /*------------------------------------------------------------------------------------------*/
 
 #banner {
-    background: url('../images/banner-images/banner-image-1.jpg') no-repeat center center;
+    background: url('../../../src/images/banner-images/banner-image-1.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -2441,7 +2441,7 @@ blockquote {
     --sidebar-bg: rgba(255, 255, 255, 0.95);
     --sidebar-glass-bg: rgba(255, 255, 255, 0.85);
     --sidebar-border: rgba(0, 0, 0, 0.1);
-    --accent-color: #0469ef; /* Brand Blue from Logo */
+    --accent-color: #6097F6; /* Brand Blue from Logo */
     --pillar-label: #888;
     --text-primary: #333;
     --text-secondary: #666;

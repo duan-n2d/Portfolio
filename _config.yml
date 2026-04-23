@@ -39,9 +39,18 @@ defaults:
     values:
       layout: "default"
       sidebar: true
+  - scope:
+      path: "projects"
+    values:
+      layout: "default"
 
 sass:
   style: compressed
+
+# Ensure these directories are copied to _site
+include:
+  - data
+  - src
 
 exclude:
   - .github

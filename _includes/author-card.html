@@ -1,0 +1,29 @@
+<!-- Reusable Author Card — powered by _data/dyllan.yml -->
+<div class="author-card">
+    {% if site.data.dyllan.avatar %}
+    <div class="author-avatar">
+        <img src="{{ site.baseurl }}{{ site.data.dyllan.avatar }}" alt="{{ site.data.dyllan.name }}">
+    </div>
+    {% endif %}
+    <div class="author-info">
+        <h3 class="author-name">{{ site.data.dyllan.name }}</h3>
+        <p class="author-title">{{ site.data.dyllan.title }} @ {{ site.data.dyllan.company }}</p>
+        {% if site.data.dyllan.tagline %}
+        <p class="author-tagline">{{ site.data.dyllan.tagline }}</p>
+        {% endif %}
+        <div class="author-links">
+            {% if site.data.dyllan.social.github %}
+            <a href="{{ site.data.dyllan.social.github }}" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+            {% endif %}
+            {% if site.data.dyllan.social.linkedin %}
+            <a href="{{ site.data.dyllan.social.linkedin }}" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            {% endif %}
+            {% if site.data.dyllan.email %}
+            <a href="mailto:{{ site.data.dyllan.email }}" title="Email"><i class="fa fa-envelope"></i></a>
+            {% endif %}
+            {% if site.data.dyllan.resume.download_url %}
+            <a href="{{ site.data.dyllan.resume.download_url }}" target="_blank" title="Resume"><i class="fa fa-file-pdf-o"></i></a>
+            {% endif %}
+        </div>
+    </div>
+</div>

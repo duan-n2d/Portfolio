@@ -13,19 +13,16 @@ title: "Duan Nguyen Duy | Professional Portfolio"
         <div class="row clearfix">
             <div class="col-1">
                 <article class="about-item wow fadeInUp" data-wow-delay="0.1s">
-                    <i class="fa fa-briefcase fa-2x"></i>
                     <h3>Merkle Inc (Dentsu) | Data Engineer</h3>
                     <p>Designing Airflow-driven pipelines for Salesforce Marketing Cloud and complex multi-source data integrations.</p>
                 </article>
 
                 <article class="about-item wow fadeInUp" data-wow-delay="0.2s">
-                    <i class="fa fa-line-chart fa-2x"></i>
                     <h3>Antsomi | Data Analyst</h3>
                     <p>Optimized CDP 365 solutions and automated routine data tasks with Python, increasing efficiency by 25%.</p>
                 </article>
 
                 <article class="about-item wow fadeInUp" data-wow-delay="0.3s">
-                    <i class="fa fa-graduation-cap fa-2x"></i>
                     <h3>University of Economics & Law</h3>
                     <p>Bachelor in Management Information Systems. Google Certified Business Intelligence Professional.</p>
                 </article>
