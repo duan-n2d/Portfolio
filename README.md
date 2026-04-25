@@ -1,61 +1,80 @@
-# 🚀 Unified Developer Portfolio & Ecosystem
+# Professional Data Engineer Portfolio & Technical Ecosystem
 
-Welcome to my unified developer ecosystem! This repository consolidates two primary hubs into a single, high-performance Jekyll-based platform:
+A highly optimized, data-driven developer portfolio and learning platform built with Jekyll. This ecosystem serves as a central hub for professional documentation, technical knowledge sharing, and project showcasing.
 
-1.  **Personal Portfolio**: A high-impact landing page reflecting my current focus as a Data Engineer.
-2.  **Learning Journey**: A structured technical knowledge base covering Data Engineering, Data Science, AI, and CS fundamentals.
-3.  **Resume**: A direct PDF view of my latest professional background.
+## Core Pillars
+
+1.  **Professional Portfolio**: Impact-focused landing page and "About" section highlighting enterprise expertise.
+2.  **Learning Journey**: A systematic technical knowledge base categorized by domain (Data Engineering, AI, Data Science, etc.).
+3.  **Project Gallery**: Structured case studies demonstrating real-world technical problem-solving and impact.
+4.  **Admin Portal**: Seamless content management integrated via Decap CMS.
+
+## Tech Stack
+
+- **Static Site Generator**: [Jekyll](https://jekyllrb.com/)
+- **Styling**: Vanilla CSS with a centralized Design Token system
+- **Design Philosophy**: Minimalist, premium aesthetic with a primary brand color of `#1128be`
+- **CMS**: Integrated [Decap CMS](https://decapcms.org/) for programmatic content updates
+- **Hosting & CI/CD**: GitHub Pages with automated builds and Link Checker validation
+
+## Data-Driven Architecture
+
+The project employs a structured data-first approach for maximum maintainability:
+
+### Data Layers (`data/`)
+- **`dyllan/`**: Personal information and bio data (`about-me.md`).
+- **`learning/`**: Hierarchical technical content organized by domain (Data-Engineer, AI-Applications, etc.).
+- **`projects/`**: Standardized case study documentation.
+
+### Configuration & Components
+- **`_data/`**: Site metadata, navigation hierarchies, and design-related YAML configs.
+- **`_includes/`**: Modular Liquid components for headers, footers, sidebars, and cards.
+- **`src/images/`**: Centralized asset management for profile, learning materials, and project visuals.
+
+## Visual Design System
+
+The system uses CSS Custom Properties (tokens) defined in `assets/css/design-tokens.css`:
+- **Primary Color**: `#1128be` (Deep Blue)
+- **Hover/Accent**: `#F8DE22` (Yellow)
+- **Background**: `#FFFFFF` (Clean White)
+- **Text**: `#000000` (Classic Black)
+
+## Full Project Structure
+
+| Path | Description |
+| :--- | :--- |
+| **`_data/`** | Global site configuration and data files. |
+| ├── `navigation.yml` | Defines the header navigation and menu hierarchies. |
+| ├── `learning_nav.yml` | Configures the technical learning sidebar structure. |
+| └── `dyllan.yml` | Centralized personal metadata (author info, bio details). |
+| **`_includes/`** | Reusable Liquid and HTML components. |
+| ├── `header.html` / `footer.html` | Common site-wide layout elements. |
+| ├── `sidebar-learning.html` | Dynamic technical navigation sidebar. |
+| └── `author-card.html` | Profile component used across the portfolio. |
+| **`_layouts/`** | Page templates determining the look of subpages. |
+| ├── `default.html` | Baseline layout for all content pages. |
+| └── `home.html` | Specialized layout for the landing page. |
+| **`data/`** | The systematic content data layer (Source of Truth). |
+| ├── `dyllan/` | Detailed "About Me" and personal documentation. |
+| ├── `learning/` | Technical guides organized by domain-specific subdirectories. |
+| └── `projects/` | Standardized documentation for professional case studies. |
+| **`src/`** | Source assets for development and assets processing. |
+| └── `images/` | Categorized site imagery (me, learning, projects, banner). |
+| **`assets/`** | Built assets served to the browser. |
+| ├── `css/` | Contains the design system and centralized tokens. |
+| └── `js/` | Site-wide interactive logic and vendor libraries. |
+| **`admin/`** | [Decap CMS](https://decapcms.org/) configuration files. |
+| **`.github/`** | CI/CD pipeline definitions (Link checking, Deployment). |
+| `index.md` | The main landing page of the portfolio. |
+| `resume.md` | Dedicated page for viewing professional background. |
+| `_config.yml` | Primary Jekyll site configuration and build settings. |
+
+## Deployment & CI/CD
+
+The repository includes a robust CI/CD pipeline in `.github/workflows/`:
+- **Link Checker**: Automated validation using Lychee. Configured to handle Jekyll root-relative paths and remap site roots for error-free validation.
+- **Auto-Deploy**: seamless promotion to GitHub Pages upon merge to `main`.
 
 ---
 
-## 📂 Architecture & Folder Roles
-
-### 🏛️ Structural Components
-- **`_data/`**: Centralized configuration.
-    - `navigation.yml`: Manages the main header dropdowns and logical grouping.
-    - `learning_nav.yml`: Specifically manages the hierarchical learning sidebar.
-- **`_includes/`**: Modular Liquid components.
-    - `header.html`: Implements the dynamic, nested navigation system.
-    - `sidebar-learning.html`: The specialized technical navigation sidebar.
-- **`_layouts/`**: Presentation templates.
-    - `default.html`: Core structure for the entire site.
-- **`assets/`**: Shared CSS design tokens, JavaScript logic, and vendor libraries.
-
-### 🍱 Content Hubs
-- **`/learning/`**: Categorized technical notes. Each category (e.g., `Data-Engineer`) has its own `index.md` landing page.
-- **`resume.md`**: Dedicated page for the PDF Resume view.
-
----
-
-## ⚙️ Core Logic
-
-### 1. Context-Aware Sidebars
-To maintain a clean user experience, the **Learning Journey Sidebar** only appears when browsing content within the `/learning/` directory. This logic is handled in `_layouts/default.html` using:
-```liquid
-{% if page.url contains '/learning/' and page.url != '/learning/index.html' %}
-  {% include sidebar-learning.html %}
-{% endif %}
-```
-
-### 2. Grouped Navigation
-Navigation is organized into three primary groups in `_data/navigation.yml`:
-- **Academic Hub**: Grouped scholarly pages.
-- **Learning Journey**: Grouped technical specializations.
-- **Admin**: Quick access to content management.
-
----
-
-## 🧹 Refactoring & Cleanup Note
-During the consolidation of this ecosystem, several redundant or placeholder components were removed to ensure maintainability:
-- **Redundant Layouts**: Eliminated duplicate `sidebar` inclusions that caused dual-sidebar issues.
-- **Placeholder Pages**: Removed template sample pages (e.g., `archive-layout-with-content.md`) and empty HTML stubs.
-- **Hardcoded Links**: Replaced manual HTML links in the header with dynamic Liquid loops that pull from `navigation.yml`.
-
----
-
-## 🚀 Development & Deployment
-- **Built with**: [Jekyll](https://jekyllrb.com/)
-- **Deployment**: Automated via GitHub Actions (Static Deployment).
-- **CMS**: Integrated with Decap CMS at `/admin`.
-
-Developed with ❤️ by [NDoubleD](https://github.com/duan-n2d)
+**Developed and Maintained by [Duan Nguyen Duy](https://github.com/duan-n2d)**
